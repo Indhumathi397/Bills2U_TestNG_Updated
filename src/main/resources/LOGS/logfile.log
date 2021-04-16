@@ -1748,3 +1748,537 @@ Session ID: 6f6e07724945cde882bbb4184be9692c
 2021-04-15 11:06:59,897 INFO  [Root_Class_TestNG] Quiting the browser 
 2021-04-15 11:07:00,554 INFO  [Root_Class_TestNG] Browser has closed 
 2021-04-15 11:20:23,730 INFO  [Root_Class_TestNG] Opening Chrome browser 
+2021-04-16 15:16:14,333 INFO  [Root_Class_TestNG] Opening Chrome browser 
+2021-04-16 15:26:20,365 INFO  [Root_Class_TestNG] Chrome browser has not opened, but it displayed the Exception as...
+session not created
+from timeout: Timed out receiving message from renderer: 600.000
+  (Session info: chrome=89.0.4389.128)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T1A7R18', ip: '10.20.152.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0055E7D3+124883]
+	Ordinal0 [0x0055E7B1+124849]
+	GetHandleVerifier [0x007A8688+193832]
+	GetHandleVerifier [0x0079C079+143129]
+	GetHandleVerifier [0x0079B45E+140030]
+	GetHandleVerifier [0x0079B6E6+140678]
+	GetHandleVerifier [0x0079B025+138949]
+	GetHandleVerifier [0x007A4679+177433]
+	GetHandleVerifier [0x0079AFE1+138881]
+	GetHandleVerifier [0x0079BD62+142338]
+	GetHandleVerifier [0x0079B45E+140030]
+	GetHandleVerifier [0x0079B6E6+140678]
+	GetHandleVerifier [0x0079B025+138949]
+	GetHandleVerifier [0x007A2A0A+170154]
+	GetHandleVerifier [0x0079AFE1+138881]
+	GetHandleVerifier [0x0079BD62+142338]
+	GetHandleVerifier [0x0079B45E+140030]
+	GetHandleVerifier [0x0079B6E6+140678]
+	GetHandleVerifier [0x0079B025+138949]
+	GetHandleVerifier [0x007A0D69+162825]
+	GetHandleVerifier [0x0079AFE1+138881]
+	GetHandleVerifier [0x0079BD62+142338]
+	GetHandleVerifier [0x0079B45E+140030]
+	GetHandleVerifier [0x0079B6E6+140678]
+	GetHandleVerifier [0x0079B025+138949]
+	GetHandleVerifier [0x007A017C+159772]
+	GetHandleVerifier [0x0079AFE1+138881]
+	GetHandleVerifier [0x0079BD62+142338]
+	GetHandleVerifier [0x0079B45E+140030]
+	GetHandleVerifier [0x0079B6E6+140678]
+	GetHandleVerifier [0x0079B025+138949]
+	GetHandleVerifier [0x007976ED+124301]
+	GetHandleVerifier [0x0079AFE1+138881]
+	GetHandleVerifier [0x0079AE03+138403]
+	GetHandleVerifier [0x0079ABF7+137879]
+	GetHandleVerifier [0x007A9930+198608]
+	GetHandleVerifier [0x007E5758+443896]
+	GetHandleVerifier [0x007E47FC+439964]
+	GetHandleVerifier [0x007E154B+426987]
+	GetHandleVerifier [0x007C4FFD+310941]
+	GetHandleVerifier [0x007C5D8E+314414]
+	GetHandleVerifier [0x007C5D19+314297]
+	GetHandleVerifier [0x008831EC+1089676]
+	GetHandleVerifier [0x008817C9+1082985]
+	GetHandleVerifier [0x008813A3+1081923]
+	GetHandleVerifier [0x0097D9FD+2115741]
+	Ordinal0 [0x006AB82E+1488942]
+	Ordinal0 [0x00645A7D+1071741]
+	Ordinal0 [0x0064559B+1070491]
+	Ordinal0 [0x006454B1+1070257]
+	Ordinal0 [0x0067FF53+1310547]
+	BaseThreadInitThunk [0x76DEFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x76FC7A4E+286]
+	RtlGetAppContainerNamedObjectPath [0x76FC7A1E+238]
+ 
+2021-04-16 15:26:20,365 INFO  [Root_Class_TestNG] Navigating to Billers portal 
+2021-04-16 15:26:20,365 INFO  [Root_Class_TestNG] Billers portal has not launched.  but it displayed the Exception as..
+null 
+2021-04-16 15:26:20,366 INFO  [Root_Class_TestNG] Waiting till the Page is load 
+2021-04-16 15:26:20,366 INFO  [Root_Class_TestNG] Browser has not wait till the page is load.  but it displayed the exception as...
+null 
+2021-04-16 15:26:20,366 INFO  [Root_Class_TestNG] Maximizing window 
+2021-04-16 15:26:20,366 INFO  [Root_Class_TestNG] Window has not maximized.  but it displayed exception as...
+null 
+2021-04-16 15:26:20,924 INFO  [Root_Class_TestNG] Quiting the browser 
+2021-04-16 15:41:07,064 INFO  [Root_Class_TestNG] Opening Chrome browser 
+2021-04-16 15:41:08,972 INFO  [Root_Class_TestNG] Chrome browser has launched 
+2021-04-16 15:41:08,972 INFO  [Root_Class_TestNG] Navigating to Billers portal 
+2021-04-16 15:41:20,445 INFO  [Root_Class_TestNG] Billers portal has launched 
+2021-04-16 15:41:20,445 INFO  [Root_Class_TestNG] Waiting till the Page is load 
+2021-04-16 15:41:20,462 INFO  [Root_Class_TestNG] Browser has waited till the page is load 
+2021-04-16 15:41:20,462 INFO  [Root_Class_TestNG] Maximizing window 
+2021-04-16 15:41:20,609 INFO  [Root_Class_TestNG] Window has maximized 
+2021-04-16 15:41:20,702 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is display 
+2021-04-16 15:41:20,752 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is click 
+2021-04-16 15:41:20,844 INFO  [Root_Class_TestNG] Clicking on the 'Login now' button 
+2021-04-16 15:41:23,721 INFO  [Root_Class_TestNG] Login Now has clicked 
+2021-04-16 15:41:23,729 INFO  [Root_Class_TestNG] Waiting till the Username text box is display 
+2021-04-16 15:41:23,783 INFO  [Root_Class_TestNG] Entering username 
+2021-04-16 15:41:23,856 INFO  [Root_Class_TestNG] Username has entered. 
+2021-04-16 15:41:23,856 INFO  [Root_Class_TestNG] Waiting till the 'Password' is display 
+2021-04-16 15:41:23,892 INFO  [Root_Class_TestNG] Entering password 
+2021-04-16 15:41:23,963 INFO  [Root_Class_TestNG] Password has entered 
+2021-04-16 15:41:23,963 INFO  [Root_Class_TestNG] Waiting till the 'Login' button is display 
+2021-04-16 15:41:24,000 INFO  [Root_Class_TestNG] Waiting till the 'Login' button is click 
+2021-04-16 15:41:24,049 INFO  [Root_Class_TestNG] Clicking on the 'Login' button 
+2021-04-16 15:41:24,771 INFO  [Root_Class_TestNG] 'Login' button has clicked 
+2021-04-16 15:41:24,771 INFO  [Root_Class_TestNG] Waiting till the 'Setup' menu is display 
+2021-04-16 15:41:26,485 INFO  [Root_Class_TestNG] Waiting till the 'Invoice' menu is display 
+2021-04-16 15:41:26,579 INFO  [Root_Class_TestNG] Biller has able to view the Biller home Page. 
+2021-04-16 15:41:26,579 INFO  [Root_Class_TestNG] Waiting till the Page is loading 
+2021-04-16 15:42:04,385 INFO  [Root_Class_TestNG] Waiting till the Person Icon is display 
+2021-04-16 15:42:04,484 INFO  [Root_Class_TestNG] Waiting till the Person Icon is click 
+2021-04-16 15:42:04,545 INFO  [Root_Class_TestNG] Clicking on the Person Icon 
+2021-04-16 15:42:04,798 INFO  [Root_Class_TestNG] Person Icon has clicked 
+2021-04-16 15:42:04,798 INFO  [Root_Class_TestNG] Waiting till the Logout is display 
+2021-04-16 15:42:05,000 INFO  [Root_Class_TestNG] Waiting till the Logout is click 
+2021-04-16 15:42:05,104 INFO  [Root_Class_TestNG] Clicking on the Logout 
+2021-04-16 15:42:05,850 INFO  [Root_Class_TestNG] Logout has clicked 
+2021-04-16 15:42:10,865 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is display 
+2021-04-16 15:42:10,903 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is click 
+2021-04-16 15:42:10,988 INFO  [Root_Class_TestNG] Clicking on the 'Login now' button 
+2021-04-16 15:42:11,414 INFO  [Root_Class_TestNG] Login Now has clicked 
+2021-04-16 15:42:11,414 INFO  [Root_Class_TestNG] Waiting till the Username text box is display 
+2021-04-16 15:42:11,445 INFO  [Root_Class_TestNG] Entering username 
+2021-04-16 15:42:11,523 INFO  [Root_Class_TestNG] Username has entered. 
+2021-04-16 15:42:11,523 INFO  [Root_Class_TestNG] Waiting till the 'Password' is display 
+2021-04-16 15:42:11,556 INFO  [Root_Class_TestNG] Entering password 
+2021-04-16 15:42:11,632 INFO  [Root_Class_TestNG] Password has entered 
+2021-04-16 15:42:11,632 INFO  [Root_Class_TestNG] Waiting till the 'Login' button is display 
+2021-04-16 15:42:11,660 INFO  [Root_Class_TestNG] Waiting till the 'Login' button is click 
+2021-04-16 15:42:11,712 INFO  [Root_Class_TestNG] Clicking on the 'Login' button 
+2021-04-16 15:42:12,306 INFO  [Root_Class_TestNG] 'Login' button has clicked 
+2021-04-16 15:42:12,307 INFO  [Root_Class_TestNG] Waiting till the 'Setup' menu is display 
+2021-04-16 15:42:14,074 INFO  [Root_Class_TestNG] Waiting till the 'Invoice' menu is display 
+2021-04-16 15:42:14,168 INFO  [Root_Class_TestNG] Biller has able to view the Biller home Page. 
+2021-04-16 15:42:14,168 INFO  [Root_Class_TestNG] Waiting till the Page is loading 
+2021-04-16 15:42:53,926 INFO  [Root_Class_TestNG] Waiting till the Person Icon is display 
+2021-04-16 15:42:54,060 INFO  [Root_Class_TestNG] Waiting till the Person Icon is click 
+2021-04-16 15:42:54,103 INFO  [Root_Class_TestNG] Clicking on the Person Icon 
+2021-04-16 15:42:54,315 INFO  [Root_Class_TestNG] Person Icon has clicked 
+2021-04-16 15:42:54,315 INFO  [Root_Class_TestNG] Waiting till the Logout is display 
+2021-04-16 15:42:54,545 INFO  [Root_Class_TestNG] Waiting till the Logout is click 
+2021-04-16 15:42:54,725 INFO  [Root_Class_TestNG] Clicking on the Logout 
+2021-04-16 15:42:59,856 INFO  [Root_Class_TestNG] Logout has clicked 
+2021-04-16 15:43:04,878 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is display 
+2021-04-16 15:43:04,933 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is click 
+2021-04-16 15:43:05,030 INFO  [Root_Class_TestNG] Clicking on the 'Login now' button 
+2021-04-16 15:43:06,012 INFO  [Root_Class_TestNG] Login Now has clicked 
+2021-04-16 15:43:06,013 INFO  [Root_Class_TestNG] Waiting till the Username text box is display 
+2021-04-16 15:43:06,067 INFO  [Root_Class_TestNG] Entering username 
+2021-04-16 15:43:06,196 INFO  [Root_Class_TestNG] Username has entered. 
+2021-04-16 15:43:06,196 INFO  [Root_Class_TestNG] Waiting till the 'Password' is display 
+2021-04-16 15:43:06,233 INFO  [Root_Class_TestNG] Entering password 
+2021-04-16 15:43:06,305 INFO  [Root_Class_TestNG] Password has entered 
+2021-04-16 15:43:06,305 INFO  [Root_Class_TestNG] Waiting till the 'Login' button is display 
+2021-04-16 15:43:06,341 INFO  [Root_Class_TestNG] Waiting till the 'Login' button is click 
+2021-04-16 15:43:06,391 INFO  [Root_Class_TestNG] Clicking on the 'Login' button 
+2021-04-16 15:43:07,062 INFO  [Root_Class_TestNG] 'Login' button has clicked 
+2021-04-16 15:43:07,063 INFO  [Root_Class_TestNG] Waiting till the 'Setup' menu is display 
+2021-04-16 15:43:08,838 INFO  [Root_Class_TestNG] Waiting till the 'Invoice' menu is display 
+2021-04-16 15:43:08,951 INFO  [Root_Class_TestNG] Biller has able to view the Biller home Page. 
+2021-04-16 15:43:08,951 INFO  [Root_Class_TestNG] Waiting till the Page is loading 
+2021-04-16 15:44:00,076 INFO  [Root_Class_TestNG] Waiting till the Person Icon is display 
+2021-04-16 15:44:00,166 INFO  [Root_Class_TestNG] Waiting till the Person Icon is click 
+2021-04-16 15:44:00,212 INFO  [Root_Class_TestNG] Clicking on the Person Icon 
+2021-04-16 15:44:00,384 INFO  [Root_Class_TestNG] Person Icon has clicked 
+2021-04-16 15:44:00,384 INFO  [Root_Class_TestNG] Waiting till the Logout is display 
+2021-04-16 15:44:01,260 INFO  [Root_Class_TestNG] Waiting till the Logout is click 
+2021-04-16 15:44:01,365 INFO  [Root_Class_TestNG] Clicking on the Logout 
+2021-04-16 15:44:02,715 INFO  [Root_Class_TestNG] Logout has clicked 
+2021-04-16 15:44:07,728 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is display 
+2021-04-16 15:44:07,765 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is click 
+2021-04-16 15:44:07,834 INFO  [Root_Class_TestNG] Clicking on the 'Login now' button 
+2021-04-16 15:44:08,194 INFO  [Root_Class_TestNG] Login Now has clicked 
+2021-04-16 15:44:08,195 INFO  [Root_Class_TestNG] Waiting till the Username text box is display 
+2021-04-16 15:44:08,222 INFO  [Root_Class_TestNG] Entering username 
+2021-04-16 15:44:08,280 INFO  [Root_Class_TestNG] Username has entered. 
+2021-04-16 15:44:08,280 INFO  [Root_Class_TestNG] Waiting till the 'Password' is display 
+2021-04-16 15:44:08,311 INFO  [Root_Class_TestNG] Entering password 
+2021-04-16 15:44:08,374 INFO  [Root_Class_TestNG] Password has entered 
+2021-04-16 15:44:08,374 INFO  [Root_Class_TestNG] Waiting till the 'Login' button is display 
+2021-04-16 15:44:08,405 INFO  [Root_Class_TestNG] Waiting till the 'Login' button is click 
+2021-04-16 15:44:08,455 INFO  [Root_Class_TestNG] Clicking on the 'Login' button 
+2021-04-16 15:44:09,387 INFO  [Root_Class_TestNG] 'Login' button has clicked 
+2021-04-16 15:44:09,387 INFO  [Root_Class_TestNG] Waiting till the 'Setup' menu is display 
+2021-04-16 15:44:10,535 INFO  [Root_Class_TestNG] Waiting till the 'Invoice' menu is display 
+2021-04-16 15:44:10,630 INFO  [Root_Class_TestNG] Biller has able to view the Biller home Page. 
+2021-04-16 15:44:10,630 INFO  [Root_Class_TestNG] Waiting till the Page is loading 
+2021-04-16 15:44:55,351 INFO  [Root_Class_TestNG] Waiting till the Person Icon is display 
+2021-04-16 15:44:55,438 INFO  [Root_Class_TestNG] Waiting till the Person Icon is click 
+2021-04-16 15:44:55,479 INFO  [Root_Class_TestNG] Clicking on the Person Icon 
+2021-04-16 15:44:55,630 INFO  [Root_Class_TestNG] Person Icon has clicked 
+2021-04-16 15:44:55,630 INFO  [Root_Class_TestNG] Waiting till the Logout is display 
+2021-04-16 15:45:55,782 INFO  [Root_Class_TestNG] Person icon has not clicked.  But it displayed the Exception as Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.linkText: Log Out' (tried for 30 second(s) with 500 milliseconds interval) 
+2021-04-16 15:45:55,785 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is display 
+2021-04-16 15:46:55,858 INFO  [Root_Class_TestNG] Login process has not completed.  But it displayed the Exception as..
+Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: /html/body/app-root/div/app-layout/mat-sidenav-container/mat-sidenav-content/div[1]/app-landing/div[1]/div/div[2]/div/button/span[1]' (tried for 30 second(s) with 500 milliseconds interval) 
+2021-04-16 15:47:38,064 INFO  [Root_Class_TestNG] Waiting till the Person Icon is display 
+2021-04-16 15:47:38,167 INFO  [Root_Class_TestNG] Waiting till the Person Icon is click 
+2021-04-16 15:48:39,220 INFO  [Root_Class_TestNG] Person icon has not clicked.  But it displayed the Exception as Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: /html/body/app-root/div/app-layout/mat-toolbar/div/div[2]/app-user-menu/button/span[1]/mat-icon' (tried for 30 second(s) with 500 milliseconds interval) 
+2021-04-16 15:48:39,256 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is display 
+2021-04-16 15:49:39,336 INFO  [Root_Class_TestNG] Login process has not completed.  But it displayed the Exception as..
+Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: /html/body/app-root/div/app-layout/mat-sidenav-container/mat-sidenav-content/div[1]/app-landing/div[1]/div/div[2]/div/button/span[1]' (tried for 30 second(s) with 500 milliseconds interval) 
+2021-04-16 15:50:09,955 INFO  [Root_Class_TestNG] no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/div/app-layout/mat-toolbar/div/div[1]/div/app-horizontal-menu/div/div[2]/a/span[1]/span"}
+  (Session info: chrome=89.0.4389.128)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T1A7R18', ip: '10.20.152.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Windows\TEMP\scoped_dir4...}, goog:chromeOptions: {debuggerAddress: localhost:57413}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 79a7a8e4d33615734dd2368bf4223032
+*** Element info: {Using=xpath, value=/html/body/app-root/div/app-layout/mat-toolbar/div/div[1]/div/app-horizontal-menu/div/div[2]/a/span[1]/span} 
+2021-04-16 15:50:40,249 INFO  [Root_Class_TestNG] no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/div/app-layout/mat-sidenav-container/mat-sidenav-content/div[1]/app-invoice-batch/mat-card/mat-card-content/div[1]/div[2]/div[1]/button"}
+  (Session info: chrome=89.0.4389.128)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T1A7R18', ip: '10.20.152.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Windows\TEMP\scoped_dir4...}, goog:chromeOptions: {debuggerAddress: localhost:57413}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 79a7a8e4d33615734dd2368bf4223032
+*** Element info: {Using=xpath, value=/html/body/app-root/div/app-layout/mat-sidenav-container/mat-sidenav-content/div[1]/app-invoice-batch/mat-card/mat-card-content/div[1]/div[2]/div[1]/button} 
+2021-04-16 15:51:10,618 INFO  [Root_Class_TestNG] no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/div/app-layout/mat-sidenav-container/mat-sidenav-content/div[1]/app-invoice-batch-form/div/div[2]/mat-card/div[1]/form/div[1]/mat-form-field/div/div[1]/div/input"}
+  (Session info: chrome=89.0.4389.128)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T1A7R18', ip: '10.20.152.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Windows\TEMP\scoped_dir4...}, goog:chromeOptions: {debuggerAddress: localhost:57413}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 79a7a8e4d33615734dd2368bf4223032
+*** Element info: {Using=xpath, value=/html/body/app-root/div/app-layout/mat-sidenav-container/mat-sidenav-content/div[1]/app-invoice-batch-form/div/div[2]/mat-card/div[1]/form/div[1]/mat-form-field/div/div[1]/div/input} 
+2021-04-16 15:51:41,015 INFO  [Root_Class_TestNG] no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/div/app-layout/mat-sidenav-container/mat-sidenav-content/div[1]/app-invoice-batch-form/div/div[2]/mat-card/div[1]/form/div[1]/mat-form-field/div/div[1]/div/input"}
+  (Session info: chrome=89.0.4389.128)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T1A7R18', ip: '10.20.152.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Windows\TEMP\scoped_dir4...}, goog:chromeOptions: {debuggerAddress: localhost:57413}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 79a7a8e4d33615734dd2368bf4223032
+*** Element info: {Using=xpath, value=/html/body/app-root/div/app-layout/mat-sidenav-container/mat-sidenav-content/div[1]/app-invoice-batch-form/div/div[2]/mat-card/div[1]/form/div[1]/mat-form-field/div/div[1]/div/input} 
+2021-04-16 15:52:11,337 INFO  [Root_Class_TestNG] no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/div/app-layout/mat-sidenav-container/mat-sidenav-content/div[1]/app-invoice-batch-form/div/div[2]/mat-card/div[1]/form/div[2]/mat-chip-list/div/mat-chip"}
+  (Session info: chrome=89.0.4389.128)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T1A7R18', ip: '10.20.152.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Windows\TEMP\scoped_dir4...}, goog:chromeOptions: {debuggerAddress: localhost:57413}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 79a7a8e4d33615734dd2368bf4223032
+*** Element info: {Using=xpath, value=/html/body/app-root/div/app-layout/mat-sidenav-container/mat-sidenav-content/div[1]/app-invoice-batch-form/div/div[2]/mat-card/div[1]/form/div[2]/mat-chip-list/div/mat-chip} 
+2021-04-16 15:52:41,657 INFO  [Root_Class_TestNG] no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/div/app-layout/mat-sidenav-container/mat-sidenav-content/div[1]/app-invoice-batch-form/div/div[2]/mat-card/div[1]/form/div[3]/mat-form-field/div/div[1]/div/mat-select"}
+  (Session info: chrome=89.0.4389.128)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T1A7R18', ip: '10.20.152.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Windows\TEMP\scoped_dir4...}, goog:chromeOptions: {debuggerAddress: localhost:57413}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 79a7a8e4d33615734dd2368bf4223032
+*** Element info: {Using=xpath, value=/html/body/app-root/div/app-layout/mat-sidenav-container/mat-sidenav-content/div[1]/app-invoice-batch-form/div/div[2]/mat-card/div[1]/form/div[3]/mat-form-field/div/div[1]/div/mat-select} 
+2021-04-16 15:52:41,681 INFO  [Root_Class_TestNG] Waiting till the 'Click here' has to be display 
+2021-04-16 15:53:42,070 INFO  [Root_Class_TestNG] Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.linkText: click here' (tried for 30 second(s) with 500 milliseconds interval) 
+2021-04-16 15:54:12,387 INFO  [Root_Class_TestNG] no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/div/app-layout/mat-sidenav-container/mat-sidenav-content/div[1]/app-invoice-batch-form/div/div[2]/mat-card/div[1]/form/div[3]/mat-form-field/div/div[1]/div/mat-select"}
+  (Session info: chrome=89.0.4389.128)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T1A7R18', ip: '10.20.152.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Windows\TEMP\scoped_dir4...}, goog:chromeOptions: {debuggerAddress: localhost:57413}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 79a7a8e4d33615734dd2368bf4223032
+*** Element info: {Using=xpath, value=/html/body/app-root/div/app-layout/mat-sidenav-container/mat-sidenav-content/div[1]/app-invoice-batch-form/div/div[2]/mat-card/div[1]/form/div[3]/mat-form-field/div/div[1]/div/mat-select} 
+2021-04-16 15:54:42,714 INFO  [Root_Class_TestNG] no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/div/app-layout/mat-sidenav-container/mat-sidenav-content/div[1]/app-invoice-batch-form/div/div[2]/mat-card/div[1]/form/div[4]/mat-checkbox"}
+  (Session info: chrome=89.0.4389.128)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T1A7R18', ip: '10.20.152.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Windows\TEMP\scoped_dir4...}, goog:chromeOptions: {debuggerAddress: localhost:57413}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 79a7a8e4d33615734dd2368bf4223032
+*** Element info: {Using=xpath, value=/html/body/app-root/div/app-layout/mat-sidenav-container/mat-sidenav-content/div[1]/app-invoice-batch-form/div/div[2]/mat-card/div[1]/form/div[4]/mat-checkbox} 
+2021-04-16 15:56:41,985 INFO  [Root_Class_TestNG] trace logging enabled[server, performance, driver, browser, client, profiler] 
+2021-04-16 15:56:42,084 INFO  [Root_Class_TestNG] Opening Chrome browser 
+2021-04-16 15:56:43,969 INFO  [Root_Class_TestNG] Chrome browser has launched 
+2021-04-16 15:56:43,969 INFO  [Root_Class_TestNG] Navigating to Billers portal 
+2021-04-16 15:56:48,502 INFO  [Root_Class_TestNG] Billers portal has launched 
+2021-04-16 15:56:48,502 INFO  [Root_Class_TestNG] Waiting till the Page is load 
+2021-04-16 15:56:48,519 INFO  [Root_Class_TestNG] Browser has waited till the page is load 
+2021-04-16 15:56:48,519 INFO  [Root_Class_TestNG] Maximizing window 
+2021-04-16 15:56:48,646 INFO  [Root_Class_TestNG] Window has maximized 
+2021-04-16 15:56:48,724 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is display 
+2021-04-16 15:56:48,781 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is click 
+2021-04-16 15:56:48,851 INFO  [Root_Class_TestNG] Clicking on the 'Login now' button 
+2021-04-16 15:56:53,793 INFO  [Root_Class_TestNG] Login Now has clicked 
+2021-04-16 15:56:53,809 INFO  [Root_Class_TestNG] Waiting till the Username text box is display 
+2021-04-16 15:56:53,855 INFO  [Root_Class_TestNG] Entering username 
+2021-04-16 15:56:53,918 INFO  [Root_Class_TestNG] Username has entered. 
+2021-04-16 15:56:53,918 INFO  [Root_Class_TestNG] Waiting till the 'Password' is display 
+2021-04-16 15:56:53,946 INFO  [Root_Class_TestNG] Entering password 
+2021-04-16 15:56:54,020 INFO  [Root_Class_TestNG] Password has entered 
+2021-04-16 15:56:54,020 INFO  [Root_Class_TestNG] Waiting till the 'Login' button is display 
+2021-04-16 15:56:54,072 INFO  [Root_Class_TestNG] Waiting till the 'Login' button is click 
+2021-04-16 15:56:54,138 INFO  [Root_Class_TestNG] Clicking on the 'Login' button 
+2021-04-16 15:56:55,064 INFO  [Root_Class_TestNG] 'Login' button has clicked 
+2021-04-16 15:56:55,064 INFO  [Root_Class_TestNG] Waiting till the 'Setup' menu is display 
+2021-04-16 15:56:56,236 INFO  [Root_Class_TestNG] Waiting till the 'Invoice' menu is display 
+2021-04-16 15:56:56,346 INFO  [Root_Class_TestNG] Biller has able to view the Biller home Page. 
+2021-04-16 15:56:56,346 INFO  [Root_Class_TestNG] Waiting till the Page is loading 
+2021-04-16 15:58:05,653 INFO  [Root_Class_TestNG] Waiting till the Person Icon is display 
+2021-04-16 15:58:05,770 INFO  [Root_Class_TestNG] Waiting till the Person Icon is click 
+2021-04-16 15:58:05,815 INFO  [Root_Class_TestNG] Clicking on the Person Icon 
+2021-04-16 15:58:06,089 INFO  [Root_Class_TestNG] Person Icon has clicked 
+2021-04-16 15:58:06,089 INFO  [Root_Class_TestNG] Waiting till the Logout is display 
+2021-04-16 15:58:06,352 INFO  [Root_Class_TestNG] Waiting till the Logout is click 
+2021-04-16 15:58:06,508 INFO  [Root_Class_TestNG] Clicking on the Logout 
+2021-04-16 15:58:07,574 INFO  [Root_Class_TestNG] Logout has clicked 
+2021-04-16 15:58:12,584 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is display 
+2021-04-16 15:58:12,621 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is click 
+2021-04-16 15:58:12,731 INFO  [Root_Class_TestNG] Clicking on the 'Login now' button 
+2021-04-16 15:58:13,162 INFO  [Root_Class_TestNG] Login Now has clicked 
+2021-04-16 15:58:13,163 INFO  [Root_Class_TestNG] Waiting till the Username text box is display 
+2021-04-16 15:58:13,217 INFO  [Root_Class_TestNG] Entering username 
+2021-04-16 15:58:13,299 INFO  [Root_Class_TestNG] Username has entered. 
+2021-04-16 15:58:13,300 INFO  [Root_Class_TestNG] Waiting till the 'Password' is display 
+2021-04-16 15:58:13,340 INFO  [Root_Class_TestNG] Entering password 
+2021-04-16 15:58:13,455 INFO  [Root_Class_TestNG] Password has entered 
+2021-04-16 15:58:13,455 INFO  [Root_Class_TestNG] Waiting till the 'Login' button is display 
+2021-04-16 15:58:13,496 INFO  [Root_Class_TestNG] Waiting till the 'Login' button is click 
+2021-04-16 15:58:13,546 INFO  [Root_Class_TestNG] Clicking on the 'Login' button 
+2021-04-16 15:58:14,907 INFO  [Root_Class_TestNG] 'Login' button has clicked 
+2021-04-16 15:58:14,907 INFO  [Root_Class_TestNG] Waiting till the 'Setup' menu is display 
+2021-04-16 15:58:16,075 INFO  [Root_Class_TestNG] Waiting till the 'Invoice' menu is display 
+2021-04-16 15:58:16,178 INFO  [Root_Class_TestNG] Biller has able to view the Biller home Page. 
+2021-04-16 15:58:16,178 INFO  [Root_Class_TestNG] Waiting till the Page is loading 
+2021-04-16 15:59:01,657 INFO  [Root_Class_TestNG] Waiting till the Person Icon is display 
+2021-04-16 15:59:01,749 INFO  [Root_Class_TestNG] Waiting till the Person Icon is click 
+2021-04-16 15:59:01,791 INFO  [Root_Class_TestNG] Clicking on the Person Icon 
+2021-04-16 15:59:01,981 INFO  [Root_Class_TestNG] Person Icon has clicked 
+2021-04-16 15:59:01,981 INFO  [Root_Class_TestNG] Waiting till the Logout is display 
+2021-04-16 15:59:02,202 INFO  [Root_Class_TestNG] Waiting till the Logout is click 
+2021-04-16 15:59:02,304 INFO  [Root_Class_TestNG] Clicking on the Logout 
+2021-04-16 15:59:03,061 INFO  [Root_Class_TestNG] Logout has clicked 
+2021-04-16 15:59:08,087 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is display 
+2021-04-16 15:59:08,162 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is click 
+2021-04-16 15:59:08,240 INFO  [Root_Class_TestNG] Clicking on the 'Login now' button 
+2021-04-16 15:59:08,742 INFO  [Root_Class_TestNG] Login Now has clicked 
+2021-04-16 15:59:08,743 INFO  [Root_Class_TestNG] Waiting till the Username text box is display 
+2021-04-16 15:59:08,777 INFO  [Root_Class_TestNG] Entering username 
+2021-04-16 15:59:08,898 INFO  [Root_Class_TestNG] Username has entered. 
+2021-04-16 15:59:08,898 INFO  [Root_Class_TestNG] Waiting till the 'Password' is display 
+2021-04-16 15:59:08,950 INFO  [Root_Class_TestNG] Entering password 
+2021-04-16 15:59:09,076 INFO  [Root_Class_TestNG] Password has entered 
+2021-04-16 15:59:09,076 INFO  [Root_Class_TestNG] Waiting till the 'Login' button is display 
+2021-04-16 15:59:09,105 INFO  [Root_Class_TestNG] Waiting till the 'Login' button is click 
+2021-04-16 15:59:09,155 INFO  [Root_Class_TestNG] Clicking on the 'Login' button 
+2021-04-16 15:59:09,777 INFO  [Root_Class_TestNG] 'Login' button has clicked 
+2021-04-16 15:59:09,778 INFO  [Root_Class_TestNG] Waiting till the 'Setup' menu is display 
+2021-04-16 15:59:11,513 INFO  [Root_Class_TestNG] Waiting till the 'Invoice' menu is display 
+2021-04-16 15:59:11,625 INFO  [Root_Class_TestNG] Biller has able to view the Biller home Page. 
+2021-04-16 15:59:11,625 INFO  [Root_Class_TestNG] Waiting till the Page is loading 
+2021-04-16 15:59:53,327 INFO  [Root_Class_TestNG] Waiting till the Person Icon is display 
+2021-04-16 15:59:53,467 INFO  [Root_Class_TestNG] Waiting till the Person Icon is click 
+2021-04-16 15:59:53,525 INFO  [Root_Class_TestNG] Clicking on the Person Icon 
+2021-04-16 15:59:53,758 INFO  [Root_Class_TestNG] Person Icon has clicked 
+2021-04-16 15:59:53,758 INFO  [Root_Class_TestNG] Waiting till the Logout is display 
+2021-04-16 15:59:54,548 INFO  [Root_Class_TestNG] Waiting till the Logout is click 
+2021-04-16 15:59:54,774 INFO  [Root_Class_TestNG] Clicking on the Logout 
+2021-04-16 15:59:55,574 INFO  [Root_Class_TestNG] Logout has clicked 
+2021-04-16 16:00:00,611 INFO  [Root_Class_TestNG] Quiting the browser 
+2021-04-16 16:00:01,264 INFO  [Root_Class_TestNG] Browser has closed 
+2021-04-16 16:06:47,391 INFO  [Root_Class_TestNG] trace logging enabled[server, performance, driver, browser, client, profiler] 
+2021-04-16 16:06:47,478 INFO  [Root_Class_TestNG] Opening Chrome browser 
+2021-04-16 16:06:49,362 INFO  [Root_Class_TestNG] Chrome browser has launched 
+2021-04-16 16:06:49,363 INFO  [Root_Class_TestNG] Navigating to Billers portal 
+2021-04-16 16:06:56,374 INFO  [Root_Class_TestNG] Billers portal has launched 
+2021-04-16 16:06:56,374 INFO  [Root_Class_TestNG] Waiting till the Page is load 
+2021-04-16 16:06:56,391 INFO  [Root_Class_TestNG] Browser has waited till the page is load 
+2021-04-16 16:06:56,391 INFO  [Root_Class_TestNG] Maximizing window 
+2021-04-16 16:06:56,516 INFO  [Root_Class_TestNG] Window has maximized 
+2021-04-16 16:06:56,577 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is display 
+2021-04-16 16:06:56,635 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is click 
+2021-04-16 16:06:56,700 INFO  [Root_Class_TestNG] Clicking on the 'Login now' button 
+2021-04-16 16:06:58,974 INFO  [Root_Class_TestNG] Login Now has clicked 
+2021-04-16 16:06:58,977 INFO  [Root_Class_TestNG] Waiting till the Username text box is display 
+2021-04-16 16:06:59,031 INFO  [Root_Class_TestNG] Entering username 
+2021-04-16 16:06:59,093 INFO  [Root_Class_TestNG] Username has entered. 
+2021-04-16 16:06:59,093 INFO  [Root_Class_TestNG] Waiting till the 'Password' is display 
+2021-04-16 16:06:59,139 INFO  [Root_Class_TestNG] Entering password 
+2021-04-16 16:06:59,220 INFO  [Root_Class_TestNG] Password has entered 
+2021-04-16 16:06:59,220 INFO  [Root_Class_TestNG] Waiting till the 'Login' button is display 
+2021-04-16 16:06:59,265 INFO  [Root_Class_TestNG] Waiting till the 'Login' button is click 
+2021-04-16 16:06:59,326 INFO  [Root_Class_TestNG] Clicking on the 'Login' button 
+2021-04-16 16:07:00,292 INFO  [Root_Class_TestNG] 'Login' button has clicked 
+2021-04-16 16:07:00,292 INFO  [Root_Class_TestNG] Waiting till the 'Setup' menu is display 
+2021-04-16 16:07:02,562 INFO  [Root_Class_TestNG] Waiting till the 'Invoice' menu is display 
+2021-04-16 16:07:02,656 INFO  [Root_Class_TestNG] Biller has able to view the Biller home Page. 
+2021-04-16 16:07:02,656 INFO  [Root_Class_TestNG] Waiting till the Page is loading 
+2021-04-16 16:08:12,000 INFO  [Root_Class_TestNG] Waiting till the Person Icon is display 
+2021-04-16 16:08:12,116 INFO  [Root_Class_TestNG] Waiting till the Person Icon is click 
+2021-04-16 16:08:12,173 INFO  [Root_Class_TestNG] Clicking on the Person Icon 
+2021-04-16 16:08:12,380 INFO  [Root_Class_TestNG] Person Icon has clicked 
+2021-04-16 16:08:12,380 INFO  [Root_Class_TestNG] Waiting till the Logout is display 
+2021-04-16 16:08:13,157 INFO  [Root_Class_TestNG] Waiting till the Logout is click 
+2021-04-16 16:08:13,306 INFO  [Root_Class_TestNG] Clicking on the Logout 
+2021-04-16 16:08:14,176 INFO  [Root_Class_TestNG] Logout has clicked 
+2021-04-16 16:08:19,185 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is display 
+2021-04-16 16:08:19,268 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is click 
+2021-04-16 16:08:19,338 INFO  [Root_Class_TestNG] Clicking on the 'Login now' button 
+2021-04-16 16:08:19,755 INFO  [Root_Class_TestNG] Login Now has clicked 
+2021-04-16 16:08:19,756 INFO  [Root_Class_TestNG] Waiting till the Username text box is display 
+2021-04-16 16:08:19,783 INFO  [Root_Class_TestNG] Entering username 
+2021-04-16 16:08:19,857 INFO  [Root_Class_TestNG] Username has entered. 
+2021-04-16 16:08:19,857 INFO  [Root_Class_TestNG] Waiting till the 'Password' is display 
+2021-04-16 16:08:19,890 INFO  [Root_Class_TestNG] Entering password 
+2021-04-16 16:08:19,969 INFO  [Root_Class_TestNG] Password has entered 
+2021-04-16 16:08:19,969 INFO  [Root_Class_TestNG] Waiting till the 'Login' button is display 
+2021-04-16 16:08:19,998 INFO  [Root_Class_TestNG] Waiting till the 'Login' button is click 
+2021-04-16 16:08:20,052 INFO  [Root_Class_TestNG] Clicking on the 'Login' button 
+2021-04-16 16:08:21,090 INFO  [Root_Class_TestNG] 'Login' button has clicked 
+2021-04-16 16:08:21,090 INFO  [Root_Class_TestNG] Waiting till the 'Setup' menu is display 
+2021-04-16 16:08:22,245 INFO  [Root_Class_TestNG] Waiting till the 'Invoice' menu is display 
+2021-04-16 16:08:22,358 INFO  [Root_Class_TestNG] Biller has able to view the Biller home Page. 
+2021-04-16 16:08:22,358 INFO  [Root_Class_TestNG] Waiting till the Page is loading 
+2021-04-16 16:09:07,903 INFO  [Root_Class_TestNG] Waiting till the Person Icon is display 
+2021-04-16 16:09:08,060 INFO  [Root_Class_TestNG] Waiting till the Person Icon is click 
+2021-04-16 16:09:08,116 INFO  [Root_Class_TestNG] Clicking on the Person Icon 
+2021-04-16 16:09:08,307 INFO  [Root_Class_TestNG] Person Icon has clicked 
+2021-04-16 16:09:08,307 INFO  [Root_Class_TestNG] Waiting till the Logout is display 
+2021-04-16 16:09:09,117 INFO  [Root_Class_TestNG] Waiting till the Logout is click 
+2021-04-16 16:09:09,233 INFO  [Root_Class_TestNG] Clicking on the Logout 
+2021-04-16 16:09:10,643 INFO  [Root_Class_TestNG] Logout has clicked 
+2021-04-16 16:09:15,659 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is display 
+2021-04-16 16:09:15,756 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is click 
+2021-04-16 16:09:15,888 INFO  [Root_Class_TestNG] Clicking on the 'Login now' button 
+2021-04-16 16:09:16,792 INFO  [Root_Class_TestNG] Login Now has clicked 
+2021-04-16 16:09:16,792 INFO  [Root_Class_TestNG] Waiting till the Username text box is display 
+2021-04-16 16:09:16,859 INFO  [Root_Class_TestNG] Entering username 
+2021-04-16 16:09:16,930 INFO  [Root_Class_TestNG] Username has entered. 
+2021-04-16 16:09:16,930 INFO  [Root_Class_TestNG] Waiting till the 'Password' is display 
+2021-04-16 16:09:16,983 INFO  [Root_Class_TestNG] Entering password 
+2021-04-16 16:09:17,052 INFO  [Root_Class_TestNG] Password has entered 
+2021-04-16 16:09:17,052 INFO  [Root_Class_TestNG] Waiting till the 'Login' button is display 
+2021-04-16 16:09:17,091 INFO  [Root_Class_TestNG] Waiting till the 'Login' button is click 
+2021-04-16 16:09:17,144 INFO  [Root_Class_TestNG] Clicking on the 'Login' button 
+2021-04-16 16:09:18,531 INFO  [Root_Class_TestNG] 'Login' button has clicked 
+2021-04-16 16:09:18,531 INFO  [Root_Class_TestNG] Waiting till the 'Setup' menu is display 
+2021-04-16 16:09:20,264 INFO  [Root_Class_TestNG] Waiting till the 'Invoice' menu is display 
+2021-04-16 16:09:20,443 INFO  [Root_Class_TestNG] Biller has able to view the Biller home Page. 
+2021-04-16 16:09:20,443 INFO  [Root_Class_TestNG] Waiting till the Page is loading 
+2021-04-16 16:10:02,711 INFO  [Root_Class_TestNG] Waiting till the Person Icon is display 
+2021-04-16 16:10:02,880 INFO  [Root_Class_TestNG] Waiting till the Person Icon is click 
+2021-04-16 16:10:02,948 INFO  [Root_Class_TestNG] Clicking on the Person Icon 
+2021-04-16 16:10:03,231 INFO  [Root_Class_TestNG] Person Icon has clicked 
+2021-04-16 16:10:03,231 INFO  [Root_Class_TestNG] Waiting till the Logout is display 
+2021-04-16 16:10:03,516 INFO  [Root_Class_TestNG] Waiting till the Logout is click 
+2021-04-16 16:10:03,714 INFO  [Root_Class_TestNG] Clicking on the Logout 
+2021-04-16 16:10:04,621 INFO  [Root_Class_TestNG] Logout has clicked 
+2021-04-16 16:10:09,648 INFO  [Root_Class_TestNG] Quiting the browser 
+2021-04-16 16:10:10,292 INFO  [Root_Class_TestNG] Browser has closed 
+2021-04-16 16:41:11,593 INFO  [Root_Class_TestNG] trace logging enabled[server, performance, driver, browser, client, profiler] 
+2021-04-16 16:41:11,714 INFO  [Root_Class_TestNG] Opening Chrome browser 
+2021-04-16 16:41:14,028 INFO  [Root_Class_TestNG] Chrome browser has launched 
+2021-04-16 16:41:14,028 INFO  [Root_Class_TestNG] Navigating to Billers portal 
+2021-04-16 16:41:19,244 INFO  [Root_Class_TestNG] Billers portal has launched 
+2021-04-16 16:41:19,244 INFO  [Root_Class_TestNG] Waiting till the Page is load 
+2021-04-16 16:41:19,262 INFO  [Root_Class_TestNG] Browser has waited till the page is load 
+2021-04-16 16:41:19,262 INFO  [Root_Class_TestNG] Maximizing window 
+2021-04-16 16:41:19,388 INFO  [Root_Class_TestNG] Window has maximized 
+2021-04-16 16:41:19,465 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is display 
+2021-04-16 16:41:19,539 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is click 
+2021-04-16 16:41:19,639 INFO  [Root_Class_TestNG] Clicking on the 'Login now' button 
+2021-04-16 16:41:24,738 INFO  [Root_Class_TestNG] Login Now has clicked 
+2021-04-16 16:41:24,746 INFO  [Root_Class_TestNG] Waiting till the Username text box is display 
+2021-04-16 16:41:24,799 INFO  [Root_Class_TestNG] Entering username 
+2021-04-16 16:41:24,875 INFO  [Root_Class_TestNG] Username has entered. 
+2021-04-16 16:41:24,875 INFO  [Root_Class_TestNG] Waiting till the 'Password' is display 
+2021-04-16 16:41:24,921 INFO  [Root_Class_TestNG] Entering password 
+2021-04-16 16:41:24,993 INFO  [Root_Class_TestNG] Password has entered 
+2021-04-16 16:41:24,993 INFO  [Root_Class_TestNG] Waiting till the 'Login' button is display 
+2021-04-16 16:41:25,044 INFO  [Root_Class_TestNG] Waiting till the 'Login' button is click 
+2021-04-16 16:41:25,095 INFO  [Root_Class_TestNG] Clicking on the 'Login' button 
+2021-04-16 16:41:26,172 INFO  [Root_Class_TestNG] 'Login' button has clicked 
+2021-04-16 16:41:26,172 INFO  [Root_Class_TestNG] Waiting till the 'Setup' menu is display 
+2021-04-16 16:41:27,342 INFO  [Root_Class_TestNG] Waiting till the 'Invoice' menu is display 
+2021-04-16 16:41:27,452 INFO  [Root_Class_TestNG] Biller has able to view the Biller home Page. 
+2021-04-16 16:41:27,452 INFO  [Root_Class_TestNG] Waiting till the Page is loading 
+2021-04-16 16:42:36,242 INFO  [Root_Class_TestNG] Waiting till the Person Icon is display 
+2021-04-16 16:42:36,372 INFO  [Root_Class_TestNG] Waiting till the Person Icon is click 
+2021-04-16 16:42:36,418 INFO  [Root_Class_TestNG] Clicking on the Person Icon 
+2021-04-16 16:42:36,639 INFO  [Root_Class_TestNG] Person Icon has clicked 
+2021-04-16 16:42:36,640 INFO  [Root_Class_TestNG] Waiting till the Logout is display 
+2021-04-16 16:42:36,886 INFO  [Root_Class_TestNG] Waiting till the Logout is click 
+2021-04-16 16:42:37,034 INFO  [Root_Class_TestNG] Clicking on the Logout 
+2021-04-16 16:42:38,130 INFO  [Root_Class_TestNG] Logout has clicked 
+2021-04-16 16:42:43,158 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is display 
+2021-04-16 16:42:43,214 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is click 
+2021-04-16 16:42:43,298 INFO  [Root_Class_TestNG] Clicking on the 'Login now' button 
+2021-04-16 16:42:43,833 INFO  [Root_Class_TestNG] Login Now has clicked 
+2021-04-16 16:42:43,834 INFO  [Root_Class_TestNG] Waiting till the Username text box is display 
+2021-04-16 16:42:43,901 INFO  [Root_Class_TestNG] Entering username 
+2021-04-16 16:42:43,969 INFO  [Root_Class_TestNG] Username has entered. 
+2021-04-16 16:42:43,969 INFO  [Root_Class_TestNG] Waiting till the 'Password' is display 
+2021-04-16 16:42:44,008 INFO  [Root_Class_TestNG] Entering password 
+2021-04-16 16:42:44,094 INFO  [Root_Class_TestNG] Password has entered 
+2021-04-16 16:42:44,094 INFO  [Root_Class_TestNG] Waiting till the 'Login' button is display 
+2021-04-16 16:42:44,151 INFO  [Root_Class_TestNG] Waiting till the 'Login' button is click 
+2021-04-16 16:42:44,199 INFO  [Root_Class_TestNG] Clicking on the 'Login' button 
+2021-04-16 16:42:44,834 INFO  [Root_Class_TestNG] 'Login' button has clicked 
+2021-04-16 16:42:44,834 INFO  [Root_Class_TestNG] Waiting till the 'Setup' menu is display 
+2021-04-16 16:42:46,563 INFO  [Root_Class_TestNG] Waiting till the 'Invoice' menu is display 
+2021-04-16 16:42:46,671 INFO  [Root_Class_TestNG] Biller has able to view the Biller home Page. 
+2021-04-16 16:42:46,671 INFO  [Root_Class_TestNG] Waiting till the Page is loading 
+2021-04-16 16:43:32,466 INFO  [Root_Class_TestNG] Waiting till the Person Icon is display 
+2021-04-16 16:43:32,573 INFO  [Root_Class_TestNG] Waiting till the Person Icon is click 
+2021-04-16 16:43:32,633 INFO  [Root_Class_TestNG] Clicking on the Person Icon 
+2021-04-16 16:43:32,823 INFO  [Root_Class_TestNG] Person Icon has clicked 
+2021-04-16 16:43:32,823 INFO  [Root_Class_TestNG] Waiting till the Logout is display 
+2021-04-16 16:43:33,616 INFO  [Root_Class_TestNG] Waiting till the Logout is click 
+2021-04-16 16:43:33,755 INFO  [Root_Class_TestNG] Clicking on the Logout 
+2021-04-16 16:43:34,493 INFO  [Root_Class_TestNG] Logout has clicked 
+2021-04-16 16:43:39,513 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is display 
+2021-04-16 16:43:39,565 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is click 
+2021-04-16 16:43:39,642 INFO  [Root_Class_TestNG] Clicking on the 'Login now' button 
+2021-04-16 16:43:40,518 INFO  [Root_Class_TestNG] Login Now has clicked 
+2021-04-16 16:43:40,518 INFO  [Root_Class_TestNG] Waiting till the Username text box is display 
+2021-04-16 16:43:40,567 INFO  [Root_Class_TestNG] Entering username 
+2021-04-16 16:43:40,640 INFO  [Root_Class_TestNG] Username has entered. 
+2021-04-16 16:43:40,640 INFO  [Root_Class_TestNG] Waiting till the 'Password' is display 
+2021-04-16 16:43:40,693 INFO  [Root_Class_TestNG] Entering password 
+2021-04-16 16:43:40,778 INFO  [Root_Class_TestNG] Password has entered 
+2021-04-16 16:43:40,778 INFO  [Root_Class_TestNG] Waiting till the 'Login' button is display 
+2021-04-16 16:43:40,818 INFO  [Root_Class_TestNG] Waiting till the 'Login' button is click 
+2021-04-16 16:43:40,872 INFO  [Root_Class_TestNG] Clicking on the 'Login' button 
+2021-04-16 16:43:41,470 INFO  [Root_Class_TestNG] 'Login' button has clicked 
+2021-04-16 16:43:41,470 INFO  [Root_Class_TestNG] Waiting till the 'Setup' menu is display 
+2021-04-16 16:43:42,650 INFO  [Root_Class_TestNG] Waiting till the 'Invoice' menu is display 
+2021-04-16 16:43:42,742 INFO  [Root_Class_TestNG] Biller has able to view the Biller home Page. 
+2021-04-16 16:43:42,742 INFO  [Root_Class_TestNG] Waiting till the Page is loading 
+2021-04-16 16:44:24,310 INFO  [Root_Class_TestNG] Waiting till the Person Icon is display 
+2021-04-16 16:44:24,451 INFO  [Root_Class_TestNG] Waiting till the Person Icon is click 
+2021-04-16 16:44:24,511 INFO  [Root_Class_TestNG] Clicking on the Person Icon 
+2021-04-16 16:44:24,749 INFO  [Root_Class_TestNG] Person Icon has clicked 
+2021-04-16 16:44:24,749 INFO  [Root_Class_TestNG] Waiting till the Logout is display 
+2021-04-16 16:44:24,975 INFO  [Root_Class_TestNG] Waiting till the Logout is click 
+2021-04-16 16:44:25,108 INFO  [Root_Class_TestNG] Clicking on the Logout 
+2021-04-16 16:44:25,871 INFO  [Root_Class_TestNG] Logout has clicked 
+2021-04-16 16:44:30,889 INFO  [Root_Class_TestNG] Quiting the browser 
+2021-04-16 16:44:31,523 INFO  [Root_Class_TestNG] Browser has closed 

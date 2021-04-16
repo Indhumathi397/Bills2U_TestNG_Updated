@@ -20,6 +20,10 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.logging.LogType;
+import org.openqa.selenium.logging.LoggingPreferences;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -31,6 +35,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
 
 
 public class Root_Class_TestNG {
@@ -54,6 +59,7 @@ public class Root_Class_TestNG {
             .TC_Dash_002()
             .TC_Dash_003();
 }
+  /*
     @Test
     public void InvoiceBatchListTest() throws IOException {
         new Invoice_Batch_List_Page()
@@ -212,13 +218,23 @@ public class Root_Class_TestNG {
 
     }
 
-
+*/
 
     @BeforeTest
     public void initProcess() throws IOException {
         DOMConfigurator.configure("D:\\Bills2U_Automation\\Bills2U_Automation\\src\\test\\java\\log4j.xml");
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability(CapabilityType.SUPPORTS_NETWORK_CONNECTION, true);
+        LoggingPreferences loggingPrefs = new LoggingPreferences();
+        loggingPrefs.enable(LogType.DRIVER, Level.ALL);
+        loggingPrefs.enable(LogType.BROWSER, Level.ALL);
+        loggingPrefs.enable(LogType.PROFILER, Level.ALL);
+        loggingPrefs.enable(LogType.SERVER, Level.ALL);
+        loggingPrefs.enable(LogType.CLIENT, Level.ALL);
+        loggingPrefs.enable(LogType.PERFORMANCE, Level.ALL);
+        capabilities.setCapability(CapabilityType.LOGGING_PREFS, loggingPrefs);
+        log.info("trace logging enabled" + loggingPrefs.getEnabledLogTypes());
         watch.start();
-
         getTestData();
         report = new ExtentReports();
         htmlReport = new ExtentHtmlReporter(prop.getProperty("Bills2U.report.Directory") + "/RinggitPay_Automation_Report.html");
@@ -393,6 +409,7 @@ public class Root_Class_TestNG {
             log.info(ex.toString());
             test.fail(ex.toString());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory")+"/loginProcess.jpeg").build());
+
         }
     }
 
