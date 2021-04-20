@@ -24,105 +24,9 @@ public class Merchant_On_Board_Process extends Root_Class_TestNG {
         PropertyClass rp=new PropertyClass();
         prop = rp.readPropertiesFile();
     }
-    public static void loginProcess() throws IOException {
-        try {
-            getTestData();
-            Obj_Rep_Home objHome = new Obj_Rep_Home();
-            PageFactory.initElements(driver, objHome);
-            WebDriverWait wait = new WebDriverWait(driver, 30);
-            Actions act = new Actions(driver);
-            //Click on Login Now
-            try {
-                log.info("Waiting till the 'Login Now' button is display");
-                wait.until(ExpectedConditions.visibilityOf(objHome.loginNowButton));
-                log.info("Waiting till the 'Login Now' button is click");
-                wait.until(ExpectedConditions.elementToBeClickable(objHome.loginNowButton));
-                String loginNowText = objHome.loginNowButton.getText();
-                log.info("Clicking on the 'Login now' button");
-                objHome.loginNowButton.click();
-                log.info(loginNowText + " has clicked");
-
-                //Login page
-                Obj_Rep_Login objLogin = new Obj_Rep_Login();
-                PageFactory.initElements(driver, objLogin);
-
-                //Enter the username
-                log.info("Waiting till the Username text box is display");
-                wait.until(ExpectedConditions.visibilityOf(objLogin.username));
-                try {
-                    log.info("Entering username");
-                    objLogin.username.sendKeys(prop.getProperty("Bills2U.Login.billersUsername"));
-                    log.info("Username has entered.");
-                } catch (Exception ex) {
-                    log.info("Username has not entered, but it displayed the Exception as.." + ex.getMessage());
-                    test.fail("Username has not entered, but it displayed the Exception as.." + ex.getMessage());
-                }
-
-                //Enter the Password
-                log.info("Waiting till the 'Password' is display");
-                wait.until(ExpectedConditions.visibilityOf(objLogin.password));
-                try {
-                    log.info("Entering password");
-                    objLogin.password.sendKeys(prop.getProperty("Bills2U.Login.billersPassword"));
-                    log.info("Password has entered");
-                } catch (Exception ex) {
-                    log.info("Password has not entered, but it displayed the Exception as.." + ex.getMessage());
-                    test.fail("Password has not entered, but it displayed the Exception as.." + ex.getMessage());
-                }
-                //Click on Login
-                log.info("Waiting till the 'Login' button is display");
-                wait.until(ExpectedConditions.visibilityOf(objLogin.loginButton));
-                log.info("Waiting till the 'Login' button is click");
-                wait.until(ExpectedConditions.elementToBeClickable(objLogin.loginButton));
-                try {
-                    log.info("Clicking on the 'Login' button");
-                    act.moveToElement(objLogin.loginButton).click().build().perform();
-                    log.info("'Login' button has clicked");
-                    log.info("Waiting till the 'Setup' menu is display");
-                    wait.until(ExpectedConditions.visibilityOf(objHome.setupMenu));
-                    if (objHome.setupMenu.isDisplayed()) {
-                        if (objHome.setupMenu.getText().equals("Setup")) {
-                            log.info("Waiting till the 'Invoice' menu is display");
-                            wait.until(ExpectedConditions.visibilityOf(objHome.invoiceMenu));
-                            if (objHome.invoiceMenu.isDisplayed()) {
-                                if (objHome.invoiceMenu.getText().equals("Invoice")) {
-                                    test.pass("Biller has able to view the Biller home Page.");
-                                    log.info("Biller has able to view the Biller home Page.");
-                                } else {
-                                    test.fail("'Invoice' menu has deviated from it's expected result.  But it displayed " + objHome.setupMenu.getText());
-                                    log.info("'Invoice' menu has deviated from it's expected result.  But it displayed " + objHome.setupMenu.getText());
-                                }
-                            } else {
-                                log.info("'Invoice' menu has not displayed");
-                                test.fail("'Invoice' menu has not displayed");
-                            }
-                        } else {
-                            test.fail("'Setup' menu has deviated from it's expected result.  But it displayed " + objHome.setupMenu.getText());
-                            log.info("'Setup' menu has deviated from it's expected result.  But it displayed " + objHome.setupMenu.getText());
-                        }
-                    } else {
-                        log.info("'Setup' menu has not displayed");
-                        test.fail("'Setup' menu has not displayed");
-                    }
-                } catch (Exception ex) {
-                    log.info("'Login' button has not clicked, but it displayed the Exception as.." + ex.getMessage());
-                    test.fail("'Login' button has not clicked, but it displayed the Exception as.." + ex.getMessage());
-                }
-                log.info("Waiting till the Page is loading");
-                driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-            } catch (Exception ex) {
-                log.info("Login process has not completed.  But it displayed the Exception as..\n" + ex.getMessage());
-                test.fail("Login process has not completed.  But it displayed the Exception as..\n" + ex.getMessage());
-            }
-        }catch (Exception ex){
-            File screen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"/loginProcess.jpeg"));
-            log.info(ex.getMessage());
-            test.fail(ex.getMessage());
-            test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory")+"/loginProcess.jpeg").build());
-        }
-    }
+    
     public static void clickOnSetupMenuProcess() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Home objHome = new Obj_Rep_Home();
             PageFactory.initElements(driver, objHome);
@@ -164,6 +68,7 @@ public class Merchant_On_Board_Process extends Root_Class_TestNG {
         }
     }
     public static void clickOnMerchantMenuProcess() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Home objHome = new Obj_Rep_Home();
             PageFactory.initElements(driver, objHome);
@@ -222,8 +127,8 @@ public class Merchant_On_Board_Process extends Root_Class_TestNG {
         }
     }
     public static void enterBusinessName() throws IOException {
+        getTestData();
         try {
-            getTestData();
             Obj_Rep_Setup objSetup = new Obj_Rep_Setup();
             PageFactory.initElements(driver, objSetup);
             WebDriverWait wait = new WebDriverWait(driver, 30);
@@ -250,8 +155,8 @@ public class Merchant_On_Board_Process extends Root_Class_TestNG {
         }
     }
     public static void enterContactName() throws IOException {
+        getTestData();
         try {
-            getTestData();
             Obj_Rep_Setup objSetup = new Obj_Rep_Setup();
             PageFactory.initElements(driver, objSetup);
             WebDriverWait wait = new WebDriverWait(driver, 30);
@@ -278,8 +183,8 @@ public class Merchant_On_Board_Process extends Root_Class_TestNG {
         }
     }
     public static void enterEmail() throws IOException {
+        getTestData();
         try {
-            getTestData();
             Obj_Rep_Setup objSetup = new Obj_Rep_Setup();
             PageFactory.initElements(driver, objSetup);
             WebDriverWait wait = new WebDriverWait(driver, 30);
@@ -306,8 +211,8 @@ public class Merchant_On_Board_Process extends Root_Class_TestNG {
         }
     }
     public static void enterPhone() throws IOException {
+        getTestData();
         try {
-            getTestData();
             Obj_Rep_Setup objSetup = new Obj_Rep_Setup();
             PageFactory.initElements(driver, objSetup);
             WebDriverWait wait = new WebDriverWait(driver, 30);
@@ -334,8 +239,8 @@ public class Merchant_On_Board_Process extends Root_Class_TestNG {
         }
     }
     public static void selectActiveStatus() throws IOException {
+        getTestData();
         try {
-            getTestData();
             Obj_Rep_Setup objSetup = new Obj_Rep_Setup();
             PageFactory.initElements(driver, objSetup);
             WebDriverWait wait = new WebDriverWait(driver, 30);
@@ -377,6 +282,7 @@ public class Merchant_On_Board_Process extends Root_Class_TestNG {
         }
     }
     public static void clickOnAddMerchant() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Setup objSetup = new Obj_Rep_Setup();
             PageFactory.initElements(driver, objSetup);
@@ -427,6 +333,7 @@ public class Merchant_On_Board_Process extends Root_Class_TestNG {
         }
     }
     public static void selectAnyOneRadioButton() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Setup objSetup = new Obj_Rep_Setup();
             PageFactory.initElements(driver, objSetup);
@@ -486,8 +393,8 @@ public class Merchant_On_Board_Process extends Root_Class_TestNG {
         }
     }
     public static void verifyTheNoteMessage() throws IOException {
+        getTestData();
         try {
-            getTestData();
             Obj_Rep_Setup objSetup = new Obj_Rep_Setup();
             PageFactory.initElements(driver, objSetup);
             if (objSetup.noteText.getText().equals(prop.getProperty("Bills2U.MerchantOnBoard.noteMessage"))) {
@@ -506,8 +413,8 @@ public class Merchant_On_Board_Process extends Root_Class_TestNG {
         }
     }
     public static void fillMandatoryFieldInMerchant() throws IOException {
+        getTestData();
         try {
-            getTestData();
             Obj_Rep_Setup objSetup = new Obj_Rep_Setup();
             PageFactory.initElements(driver, objSetup);
 
@@ -538,8 +445,8 @@ public class Merchant_On_Board_Process extends Root_Class_TestNG {
         }
     }
     public static void fillOptionalFieldInMerchant() throws IOException {
+        getTestData();
         try {
-            getTestData();
             Obj_Rep_Setup objSetup = new Obj_Rep_Setup();
             PageFactory.initElements(driver, objSetup);
 
@@ -564,6 +471,7 @@ public class Merchant_On_Board_Process extends Root_Class_TestNG {
         }
     }
     public static void checkSaveisEnable() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Setup objSetup = new Obj_Rep_Setup();
             PageFactory.initElements(driver, objSetup);
@@ -591,8 +499,8 @@ public class Merchant_On_Board_Process extends Root_Class_TestNG {
         }
     }
     public static void clickOnSave() throws IOException {
+        getTestData();
         try {
-            getTestData();
             Obj_Rep_Setup objSetup = new Obj_Rep_Setup();
             PageFactory.initElements(driver, objSetup);
             Actions act = new Actions(driver);
@@ -623,25 +531,34 @@ public class Merchant_On_Board_Process extends Root_Class_TestNG {
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/clickOnSave.jpeg").build());
         }
     }
-    public static void checkGeneral_RP_Usersetting(){
-        Obj_Rep_Setup objSetup=new Obj_Rep_Setup();
-        PageFactory.initElements(driver,objSetup);
-        if(objSetup.generalSettingBtn.isDisplayed()){
-            if(objSetup.generalSettingBtn.isEnabled()){
-                if(objSetup.usersBtn.isDisplayed()){
-                    if(objSetup.usersBtn.isEnabled()){
-                        test.pass("General Settings, Users buttons has get enabled");
-                    }else {
-                        test.fail("Users button has not enabled");
+    public static void checkGeneral_RP_Usersetting() throws IOException {
+        getTestData();
+        try {
+            Obj_Rep_Setup objSetup = new Obj_Rep_Setup();
+            PageFactory.initElements(driver, objSetup);
+            if (objSetup.generalSettingBtn.isDisplayed()) {
+                if (objSetup.generalSettingBtn.isEnabled()) {
+                    if (objSetup.usersBtn.isDisplayed()) {
+                        if (objSetup.usersBtn.isEnabled()) {
+                            test.pass("General Settings, Users buttons has get enabled");
+                        } else {
+                            test.fail("Users button has not enabled");
+                        }
+                    } else {
+                        test.fail("Users button has not displayed");
                     }
-                }else {
-                    test.fail("Users button has not displayed");
+                } else {
+                    test.fail("General settings button has not enabled");
                 }
-            }else {
-                test.fail("General settings button has not enabled");
+            } else {
+                test.fail("General Setting button has not displayed");
             }
-        }else {
-            test.fail("General Setting button has not displayed");
+        } catch (Exception ex) {
+            File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/checkGeneral_RP_Usersetting.jpeg"));
+            log.info(ex.getMessage());
+            test.fail(ex.getMessage());
+            test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/checkGeneral_RP_Usersetting.jpeg").build());
         }
     }
 }

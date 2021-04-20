@@ -18,6 +18,7 @@ import java.util.Objects;
 public class Invoice_Batch_List_Process extends Root_Class_TestNG {
 
     public static void GotToInVoiceBatch() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Menu menu = new Obj_Rep_Menu();
             PageFactory.initElements(driver, menu);
@@ -43,6 +44,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void ClickShowFilter() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -67,6 +69,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void SelectFromDate() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -102,6 +105,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void SelectToDate() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -137,6 +141,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void ClickStatusInInvoiceBatchList() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -159,6 +164,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void ClickPublishStatusInInvoiceBatchList() throws IOException {
+        getTestData();
         try {
             WebElement choosePublished = driver.findElement(By.xpath("//mat-option/span[contains(.,'PUBLISHED')]"));
             WebElement chooseStopped = driver.findElement(By.xpath("//mat-option/span[contains(.,'STOPPED')]"));
@@ -193,6 +199,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void ClickStoppedStatusInInvoiceBatchList() throws IOException {
+        getTestData();
         try {
             WebElement choosePublished = driver.findElement(By.xpath("//mat-option/span[contains(.,'PUBLISHED')]"));
             WebElement chooseStopped = driver.findElement(By.xpath("//mat-option/span[contains(.,'STOPPED')]"));
@@ -227,6 +234,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void ClickDraftStatusInInvoiceBatchList() throws IOException {
+        getTestData();
         try {
             WebElement choosePublished = driver.findElement(By.xpath("//mat-option/span[contains(.,'PUBLISHED')]"));
             WebElement chooseStopped = driver.findElement(By.xpath("//mat-option/span[contains(.,'STOPPED')]"));
@@ -260,6 +268,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void ClickSearchFilterPInvoiceBatchList() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -288,6 +297,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void ClickSearchFilterSInvoiceBatchList() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -326,6 +336,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void ClickSearchFilterDInvoiceBatchList() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -354,6 +365,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void ClickSearchFilterInvoiceBatchList() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -381,6 +393,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void FindFilterInvoiceBatch(String data) throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -400,6 +413,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void ColumnFilterBatchName() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -419,6 +433,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void VerifyColumnFilterBatchName(String data) throws IOException {
+        getTestData();
         try {
 
             if (driver.findElement(By.xpath("//*[@id=\"main-content\"]/app-invoice-batch/mat-card/mat-card-content/mat-table/mat-row[1]/mat-cell[1]"))
@@ -441,6 +456,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void ColumnFilterBatchAmount() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -461,6 +477,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void VerifyColumnFilterBatchAmount(String data) throws IOException {
+        getTestData();
         try {
 
             if (driver.findElement(By.xpath("//*[@id=\"main-content\"]/app-invoice-batch/mat-card/mat-card-content/mat-table/mat-row[1]/mat-cell[2]"))
@@ -483,6 +500,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void ColumnFilterOverDue() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -503,6 +521,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void VerifyColumnFilterOverDue(String data) throws IOException {
+        getTestData();
         try {
 
             if (driver.findElement(By.xpath("//*[@id=\"main-content\"]/app-invoice-batch/mat-card/mat-card-content/mat-table/mat-row[1]/mat-cell[3]"))
@@ -525,6 +544,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void ColumnFilterUnpaid() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -545,6 +565,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void VerifyColumnFilterUnpaid(String data) throws IOException {
+        getTestData();
         try {
 
             if (driver.findElement(By.xpath("//*[@id=\"main-content\"]/app-invoice-batch/mat-card/mat-card-content/mat-table/mat-row[1]/mat-cell[4]"))
@@ -567,6 +588,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void ColumnFilterPaid() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -587,6 +609,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void VerifyColumnFilterPaid(String data) throws IOException {
+        getTestData();
         try {
 
             if (driver.findElement(By.xpath("//*[@id=\"main-content\"]/app-invoice-batch/mat-card/mat-card-content/mat-table/mat-row[1]/mat-cell[5]"))
@@ -609,6 +632,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void ColumnStatusFilter() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -627,6 +651,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void ColumnStatusFilterPublished() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -644,6 +669,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void ColumnFilterPublished() throws IOException {
+        getTestData();
         try {
             ColumnStatusFilter();
             ColumnStatusFilterPublished();
@@ -666,6 +692,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void ColumnStatusFilterStopped() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -684,7 +711,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void ColumnFilterStopped() throws IOException {
-
+        getTestData();
         try {
             ColumnStatusFilterStopped();
 
@@ -708,6 +735,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void ColumnStatusFilterDraftClick() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -731,7 +759,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void ColumnFilterDraft() throws IOException {
-
+        getTestData();
         try {
             ColumnStatusFilterDraftClick();
 
@@ -755,6 +783,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void ColumnStatusFilterAll() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -773,7 +802,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void ColumnFilterALlOption() throws IOException {
-
+        getTestData();
         try {
             ColumnFilterBatchName();
             ColumnStatusFilterAll();
@@ -798,6 +827,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void ColumnFilterCreatedOnDate() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -818,6 +848,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void VerifyColumnFilterCreatedOnDate(String data) throws IOException {
+        getTestData();
         try {
 
             if (driver.findElement(By.xpath("//*[@id=\"main-content\"]/app-invoice-batch/mat-card/mat-card-content/mat-table/mat-row[1]/mat-cell[7]"))
@@ -840,6 +871,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void ColumnFilterCreatedOnTime() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -860,6 +892,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void VerifyColumnFilterCreatedOnTime(String data) throws IOException {
+        getTestData();
         try {
 
             if (driver.findElement(By.xpath("//*[@id=\"main-content\"]/app-invoice-batch/mat-card/mat-card-content/mat-table/mat-row[1]/mat-cell[7]"))
@@ -882,6 +915,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void ColumnFilterCreatedOnDateTime() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -902,6 +936,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void VerifyColumnFilterCreatedOnDateTime(String data) throws IOException {
+        getTestData();
         try {
 
             if (driver.findElement(By.xpath("//*[@id=\"main-content\"]/app-invoice-batch/mat-card/mat-card-content/mat-table/mat-row[1]/mat-cell[7]"))
@@ -924,6 +959,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void ColumnFilterBatchProgress() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -944,6 +980,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
         public static void VerifyColumnFilterBatchProgress(String data) throws IOException {
+        getTestData();
         try {
 
             if (driver.findElement(By.xpath("//*[@id=\"main-content\"]/app-invoice-batch/mat-card/mat-card-content/mat-table/mat-row[1]/mat-cell[8]"))
@@ -966,6 +1003,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void ClickRowDeleteButton() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -990,6 +1028,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void CheckRowDeletePopup() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -1016,6 +1055,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void ClickButtonDeleteInPopupFromTable() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -1046,6 +1086,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void VerifyBatchProgressCalculation() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -1125,6 +1166,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
         return lastModifiedFile;
     }
     public static void clickOnExportButton() throws IOException {
+        getTestData();
         try {
             getTestData();
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
@@ -1181,6 +1223,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void DownloadInvoiceBatchReport() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -1204,6 +1247,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void GoToEditInvoiceBatchList() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -1226,6 +1270,7 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
     }
 
     public static void GoToEditInvoiceBatchPublishedList() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -1248,11 +1293,10 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
             test.fail(e.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory")+"/GoToEditInvoiceBatchPublishedList.jpeg").build());
         }
-
-
     }
 
     public static void GoToEditInvoiceBatchStoppedList() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -1274,9 +1318,5 @@ public class Invoice_Batch_List_Process extends Root_Class_TestNG {
             test.fail(e.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory")+"/GoToEditInvoiceBatchStoppedList.jpeg").build());
         }
-
-        
     }
-
-
 }

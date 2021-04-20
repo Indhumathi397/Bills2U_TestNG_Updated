@@ -27,6 +27,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
 
 
     public static void EnterInvoiceNumber() throws IOException {
+        getTestData();
         try {
             Obj_Rep_EditInvoiceBatch eBList = new Obj_Rep_EditInvoiceBatch();
             PageFactory.initElements(driver, eBList);
@@ -44,6 +45,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
     }
 
     public static void FindFilterInvoiceBatch(String data) throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -63,6 +65,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
     }
 
     public static void GoToEditInvoiceBatchList() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -85,6 +88,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
     }
 
     public static void GotToInVoiceBatch() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Menu menu = new Obj_Rep_Menu();
             PageFactory.initElements(driver, menu);
@@ -110,6 +114,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
     }
 
     public static void VerifyEnteredInvoiceNumber() throws IOException {
+        getTestData();
         try {
             EnterInvoiceNumber();
             Obj_Rep_EditInvoiceBatch eBList = new Obj_Rep_EditInvoiceBatch();
@@ -130,6 +135,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
     }
 
     public static void EnterRef1Number() throws IOException {
+        getTestData();
         try {
             Obj_Rep_EditInvoiceBatch eBList = new Obj_Rep_EditInvoiceBatch();
             PageFactory.initElements(driver, eBList);
@@ -147,6 +153,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
     }
 
     public static void VerifyEnteredRef1Number() throws IOException {
+        getTestData();
         try {
             EnterRef1Number();
             Obj_Rep_EditInvoiceBatch eBList = new Obj_Rep_EditInvoiceBatch();
@@ -167,6 +174,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
     }
 
     public static void EnterRef2Number() throws IOException {
+        getTestData();
         try {
             Obj_Rep_EditInvoiceBatch eBList = new Obj_Rep_EditInvoiceBatch();
             PageFactory.initElements(driver, eBList);
@@ -184,6 +192,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
     }
 
     public static void VerifyEnteredRef2Number() throws IOException {
+        getTestData();
         try {
             EnterRef2Number();
             Obj_Rep_EditInvoiceBatch eBList = new Obj_Rep_EditInvoiceBatch();
@@ -204,6 +213,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
     }
 
     public static void ClickSearchBtnInvoiceNumber() throws IOException {
+        getTestData();
         try {
             Obj_Rep_EditInvoiceBatch eBList = new Obj_Rep_EditInvoiceBatch();
             PageFactory.initElements(driver, eBList);
@@ -228,6 +238,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
     }
 
     public static void ClickSearchBtnRef1() throws IOException {
+        getTestData();
         try {
             Obj_Rep_EditInvoiceBatch eBList = new Obj_Rep_EditInvoiceBatch();
             PageFactory.initElements(driver, eBList);
@@ -252,6 +263,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
     }
 
     public static void ClickSearchBtnRef2() throws IOException {
+        getTestData();
         try {
             Obj_Rep_EditInvoiceBatch eBList = new Obj_Rep_EditInvoiceBatch();
             PageFactory.initElements(driver, eBList);
@@ -276,6 +288,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
     }
 
     public static void ClickSearchBtnInvoiceBatchList() throws IOException {
+        getTestData();
         try {
             Obj_Rep_EditInvoiceBatch eBList = new Obj_Rep_EditInvoiceBatch();
             PageFactory.initElements(driver, eBList);
@@ -302,6 +315,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
     }
 
     public static void VerifyStopBtnEnable() throws IOException {
+        getTestData();
         try {
             Obj_Rep_EditInvoiceBatch eBList = new Obj_Rep_EditInvoiceBatch();
             PageFactory.initElements(driver, eBList);
@@ -326,6 +340,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
     }
 
     public static void VerifyInvoiceBatchStatus(String status) throws IOException {
+        getTestData();
         try {
             Obj_Rep_EditInvoiceBatch eBList = new Obj_Rep_EditInvoiceBatch();
             PageFactory.initElements(driver, eBList);
@@ -349,6 +364,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
     }
 
     public static void VerifyBatchInvoicesRowStatus(String status) throws IOException {
+        getTestData();
         try {
             Obj_Rep_EditInvoiceBatch eBList = new Obj_Rep_EditInvoiceBatch();
             PageFactory.initElements(driver, eBList);
@@ -385,6 +401,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
     }
 
     public static void ClickStopButton() throws IOException {
+        getTestData();
         try {
             JavascriptExecutor js = (JavascriptExecutor) driver;
             Obj_Rep_EditInvoiceBatch eBList = new Obj_Rep_EditInvoiceBatch();
@@ -414,6 +431,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
     }
 
     public static void ClickResumeButton() throws IOException {
+        getTestData();
         try {
             JavascriptExecutor js = (JavascriptExecutor) driver;
             Obj_Rep_EditInvoiceBatch eBList = new Obj_Rep_EditInvoiceBatch();
@@ -443,6 +461,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
     }
 
     public static void VerifyStopPopup() throws IOException {
+        getTestData();
         try {
             Obj_Rep_EditInvoiceBatch eBList = new Obj_Rep_EditInvoiceBatch();
             PageFactory.initElements(driver, eBList);
@@ -471,6 +490,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
     }
 
     public static void ClickStopPopupStopButton() throws IOException {
+        getTestData();
         try {
             JavascriptExecutor js = (JavascriptExecutor) driver;
             Obj_Rep_EditInvoiceBatch eBList = new Obj_Rep_EditInvoiceBatch();
@@ -499,6 +519,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
     }
 
     public static void VerifyResumeBtnEnable() throws IOException {
+        getTestData();
         try {
             Obj_Rep_EditInvoiceBatch eBList = new Obj_Rep_EditInvoiceBatch();
             PageFactory.initElements(driver, eBList);
@@ -523,6 +544,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
     }
 
     public static void VerifyBatchInvoicesRowStoppedStatus(String status) throws IOException {
+        getTestData();
         try {
             Obj_Rep_EditInvoiceBatch eBList = new Obj_Rep_EditInvoiceBatch();
             PageFactory.initElements(driver, eBList);
@@ -559,6 +581,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
     }
 
     public static void VerifyResumePopup() throws IOException {
+        getTestData();
         try {
             Obj_Rep_EditInvoiceBatch eBList = new Obj_Rep_EditInvoiceBatch();
             PageFactory.initElements(driver, eBList);
@@ -587,6 +610,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
     }
 
     public static void ClickResumePopupResumeButton() throws IOException {
+        getTestData();
         try {
             JavascriptExecutor js = (JavascriptExecutor) driver;
             Obj_Rep_EditInvoiceBatch eBList = new Obj_Rep_EditInvoiceBatch();
@@ -630,6 +654,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
     }
 
     public void DownloadEditInvoiceBatchReport() throws IOException {
+        getTestData();
         try {
             Obj_Rep_EditInvoiceBatch eBList = new Obj_Rep_EditInvoiceBatch();
             PageFactory.initElements(driver, eBList);

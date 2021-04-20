@@ -1,5 +1,6 @@
 package bills2u_process;
 
+import Config.PropertyClass;
 import bills2u_constant.Obj_Rep_Dashboard;
 import bills2u_constant.Obj_Rep_Menu;
 import bills2u_root.Root_Class_TestNG;
@@ -8,15 +9,19 @@ import com.google.common.io.Files;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Reporter;
 
 import java.io.File;
 import java.io.IOException;
 
 public class Dashboard_Process extends Root_Class_TestNG {
 
+    public static void getTestData() throws IOException {
+        PropertyClass rp=new PropertyClass();
+        prop = rp.readPropertiesFile();
+    }
+    
     public static void ClickDashboardMenu() throws IOException {
-
+        getTestData();
         try {
             Obj_Rep_Menu menu = new Obj_Rep_Menu();
             PageFactory.initElements(driver, menu);
@@ -41,7 +46,8 @@ public class Dashboard_Process extends Root_Class_TestNG {
         }
     }
 
-    public static void DashFromDate()  throws IOException {
+    public static void DashFromDate() throws IOException {
+        getTestData();
         try {
             getTestData();
             Obj_Rep_Dashboard dashboard = new Obj_Rep_Dashboard();
@@ -89,7 +95,8 @@ public class Dashboard_Process extends Root_Class_TestNG {
         }
     }
 
-    public static void DashToDate()  throws IOException {
+    public static void DashToDate() throws IOException {
+        getTestData();
         try {
             getTestData();
             Obj_Rep_Dashboard dashboard = new Obj_Rep_Dashboard();
@@ -137,7 +144,8 @@ public class Dashboard_Process extends Root_Class_TestNG {
         }
     }
 
-    public static void VerifyInvoiceCount()  throws IOException {
+    public static void VerifyInvoiceCount() throws IOException {
+        getTestData();
         try {
             getTestData();
             Obj_Rep_Dashboard dashboard = new Obj_Rep_Dashboard();
@@ -161,7 +169,8 @@ public class Dashboard_Process extends Root_Class_TestNG {
 
     }
 
-    public static void VerifyOutStandingAmount()  throws IOException {
+    public static void VerifyOutStandingAmount() throws IOException {
+        getTestData();
         try {
             getTestData();
             Obj_Rep_Dashboard dashboard = new Obj_Rep_Dashboard();
@@ -185,7 +194,8 @@ public class Dashboard_Process extends Root_Class_TestNG {
 
     }
 
-    public static void VerifyInvoiceAgingTrend()  throws IOException {
+    public static void VerifyInvoiceAgingTrend() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Dashboard dashboard = new Obj_Rep_Dashboard();
             PageFactory.initElements(driver, dashboard);
@@ -207,8 +217,8 @@ public class Dashboard_Process extends Root_Class_TestNG {
     }
 
     public static void VerifyPaymentTrend() throws IOException, InterruptedException {
+        getTestData();
         try {
-            getTestData();
             JavascriptExecutor js = (JavascriptExecutor) driver;
             Obj_Rep_Dashboard dashboard = new Obj_Rep_Dashboard();
             PageFactory.initElements(driver, dashboard);
@@ -238,7 +248,8 @@ public class Dashboard_Process extends Root_Class_TestNG {
 
     }
 
-    public static void ClickBatchNameSelect()  throws IOException {
+    public static void ClickBatchNameSelect() throws IOException {
+        getTestData();
         try {
 
             Obj_Rep_Dashboard dashboard = new Obj_Rep_Dashboard();
@@ -257,7 +268,8 @@ public class Dashboard_Process extends Root_Class_TestNG {
 
     }
 
-    public static void EnterBatchNameInSearch()  throws IOException {
+    public static void EnterBatchNameInSearch() throws IOException {
+        getTestData();
         try {
             getTestData();
             Obj_Rep_Dashboard dashboard = new Obj_Rep_Dashboard();
@@ -281,7 +293,8 @@ public class Dashboard_Process extends Root_Class_TestNG {
 
     }
 
-    public static void SelectBatchName()  throws IOException {
+    public static void SelectBatchName() throws IOException {
+        getTestData();
         try {
             getTestData();
             Obj_Rep_Dashboard dashboard = new Obj_Rep_Dashboard();
@@ -311,7 +324,8 @@ public class Dashboard_Process extends Root_Class_TestNG {
 
     }
 
-    public static void VerifyUpdatedData()  throws IOException {
+    public static void VerifyUpdatedData() throws IOException {
+        getTestData();
         try {
             getTestData();
             Obj_Rep_Dashboard dashboard = new Obj_Rep_Dashboard();
@@ -338,7 +352,8 @@ public class Dashboard_Process extends Root_Class_TestNG {
 
     }
 
-    public static void TxtPTrendReceiveToDate()  throws IOException {
+    public static void TxtPTrendReceiveToDate() throws IOException {
+        getTestData();
         try {
             getTestData();
             Obj_Rep_Dashboard dashboard = new Obj_Rep_Dashboard();
@@ -359,7 +374,8 @@ public class Dashboard_Process extends Root_Class_TestNG {
 
     }
 
-    public static void TxtPTrendOverDueToAmt()  throws IOException {
+    public static void TxtPTrendOverDueToAmt() throws IOException {
+        getTestData();
         try {
             getTestData();
             Obj_Rep_Dashboard dashboard = new Obj_Rep_Dashboard();
@@ -380,7 +396,8 @@ public class Dashboard_Process extends Root_Class_TestNG {
 
     }
 
-    public static void TxtPTrendTotalCollected()  throws IOException {
+    public static void TxtPTrendTotalCollected() throws IOException {
+        getTestData();
         try {
             getTestData();
             Obj_Rep_Dashboard dashboard = new Obj_Rep_Dashboard();
@@ -401,7 +418,8 @@ public class Dashboard_Process extends Root_Class_TestNG {
 
     }
 
-    public static void TxtPTrendReceiveFromDate()  throws IOException {
+    public static void TxtPTrendReceiveFromDate() throws IOException {
+        getTestData();
         try {
             getTestData();
             Thread.sleep(10000);
@@ -428,8 +446,8 @@ public class Dashboard_Process extends Root_Class_TestNG {
     }
 
     public static void TxtPTrendOverDueFromAmt() throws IOException {
+        getTestData();
         try {
-            getTestData();
             Obj_Rep_Dashboard dashboard = new Obj_Rep_Dashboard();
             PageFactory.initElements(driver, dashboard);
             if (dashboard.dPayTrendOverDueAsOfFromDate.getText().contains(prop.getProperty("Bills2U.Dashboard.PayTrend.OverDueFromDate"))) {

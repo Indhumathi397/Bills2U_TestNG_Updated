@@ -33,6 +33,7 @@ public class Batch_Upload_Process extends Root_Class_TestNG {
     }
 
     public static void GotToInVoiceBatch() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Menu menu = new Obj_Rep_Menu();
             PageFactory.initElements(driver, menu);
@@ -58,6 +59,7 @@ public class Batch_Upload_Process extends Root_Class_TestNG {
     }
 
     public static void ClickBatchUpload() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -80,7 +82,7 @@ public class Batch_Upload_Process extends Root_Class_TestNG {
     }
 
     public static void CheckBatchName() throws IOException {
-
+        getTestData();
         try {
             Obj_Rep_BatchUpload bUpload = new Obj_Rep_BatchUpload();
             PageFactory.initElements(driver, bUpload);
@@ -100,7 +102,7 @@ public class Batch_Upload_Process extends Root_Class_TestNG {
     }
 
     public static void EnterBatchName() throws IOException {
-
+        getTestData();
         try {
             Obj_Rep_BatchUpload bUpload = new Obj_Rep_BatchUpload();
             PageFactory.initElements(driver, bUpload);
@@ -125,7 +127,7 @@ public class Batch_Upload_Process extends Root_Class_TestNG {
     }
 
     public static void ReminderSetup() throws IOException {
-
+getTestData();
         try {
             Obj_Rep_ReminderSetup bUpload = new Obj_Rep_ReminderSetup();
             PageFactory.initElements(driver, bUpload);
@@ -154,7 +156,7 @@ public class Batch_Upload_Process extends Root_Class_TestNG {
     }
 
     public static void ChooseFeedType() throws IOException {
-
+getTestData();
         try {
             Obj_Rep_BatchUpload bUpload = new Obj_Rep_BatchUpload();
             PageFactory.initElements(driver, bUpload);
@@ -214,6 +216,7 @@ public class Batch_Upload_Process extends Root_Class_TestNG {
     }
 
     public static void clickHereProcess() throws IOException {
+        getTestData();
         try {
             getTestData();
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
@@ -297,6 +300,7 @@ public class Batch_Upload_Process extends Root_Class_TestNG {
     }
 
     public static void editExcelFile() throws IOException {
+        getTestData();
         try {
             getTestData();
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
@@ -369,6 +373,7 @@ public class Batch_Upload_Process extends Root_Class_TestNG {
     }
 
     public static void uploadFile() throws IOException {
+        getTestData();
         try {
             getTestData();
             String downloadPath = prop.getProperty("Bills2U.FileUpload.DownloadPath");
@@ -409,7 +414,7 @@ public class Batch_Upload_Process extends Root_Class_TestNG {
     }
 
     public static void NotifyOnPublishCheckboxClick() throws IOException {
-
+getTestData();
         try {
             Obj_Rep_BatchUpload bUpload = new Obj_Rep_BatchUpload();
             PageFactory.initElements(driver, bUpload);
@@ -434,7 +439,7 @@ public class Batch_Upload_Process extends Root_Class_TestNG {
     }
 
     public static void VerifyBillGeanratedCheckBoxClick() throws IOException {
-
+getTestData();
         try {
             Obj_Rep_BatchUpload bUpload = new Obj_Rep_BatchUpload();
             PageFactory.initElements(driver, bUpload);
@@ -459,7 +464,7 @@ public class Batch_Upload_Process extends Root_Class_TestNG {
     }
 
     public static void ClickPublishButton() throws IOException {
-
+getTestData();
         try {
             Obj_Rep_BatchUpload bUpload = new Obj_Rep_BatchUpload();
             PageFactory.initElements(driver, bUpload);
@@ -490,7 +495,7 @@ public class Batch_Upload_Process extends Root_Class_TestNG {
     }
 
     public static void ClickBatchUploadDraftButton() throws IOException {
-
+getTestData();
         try {
             Obj_Rep_BatchUpload bUpload = new Obj_Rep_BatchUpload();
             PageFactory.initElements(driver, bUpload);
@@ -522,6 +527,7 @@ public class Batch_Upload_Process extends Root_Class_TestNG {
     }
 
     public static void ClickBatchUploadBackButton() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);

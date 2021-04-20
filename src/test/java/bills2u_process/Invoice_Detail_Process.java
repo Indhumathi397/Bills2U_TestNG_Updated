@@ -12,7 +12,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.*;
-import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class Invoice_Detail_Process extends Root_Class_TestNG {
@@ -22,106 +21,8 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
         prop = rp.readPropertiesFile();
     }
 
-    public static void loginProcess() throws IOException {
-        try {
-            getTestData();
-            Obj_Rep_Home objHome = new Obj_Rep_Home();
-            PageFactory.initElements(driver, objHome);
-            WebDriverWait wait = new WebDriverWait(driver, 30);
-            Actions act = new Actions(driver);
-            //Click on Login Now
-            try {
-                log.info("Waiting till the 'Login Now' button is display");
-                wait.until(ExpectedConditions.visibilityOf(objHome.loginNowButton));
-                log.info("Waiting till the 'Login Now' button is click");
-                wait.until(ExpectedConditions.elementToBeClickable(objHome.loginNowButton));
-                String loginNowText = objHome.loginNowButton.getText();
-                log.info("Clicking on the 'Login now' button");
-                objHome.loginNowButton.click();
-                log.info(loginNowText + " has clicked");
-
-                //Login page
-                Obj_Rep_Login objLogin = new Obj_Rep_Login();
-                PageFactory.initElements(driver, objLogin);
-
-                //Enter the username
-                log.info("Waiting till the Username text box is display");
-                wait.until(ExpectedConditions.visibilityOf(objLogin.username));
-                try {
-                    log.info("Entering username");
-                    objLogin.username.sendKeys(prop.getProperty("Bills2U.Login.billersUsername"));
-                    log.info("Username has entered.");
-                } catch (Exception ex) {
-                    log.info("Username has not entered, but it displayed the Exception as.." + ex.getMessage());
-                    test.fail("Username has not entered, but it displayed the Exception as.." + ex.getMessage());
-                }
-
-                //Enter the Password
-                log.info("Waiting till the 'Password' is display");
-                wait.until(ExpectedConditions.visibilityOf(objLogin.password));
-                try {
-                    log.info("Entering password");
-                    objLogin.password.sendKeys(prop.getProperty("Bills2U.Login.billersPassword"));
-                    log.info("Password has entered");
-                } catch (Exception ex) {
-                    log.info("Password has not entered, but it displayed the Exception as.." + ex.getMessage());
-                    test.fail("Password has not entered, but it displayed the Exception as.." + ex.getMessage());
-                }
-                //Click on Login
-                log.info("Waiting till the 'Login' button is display");
-                wait.until(ExpectedConditions.visibilityOf(objLogin.loginButton));
-                log.info("Waiting till the 'Login' button is click");
-                wait.until(ExpectedConditions.elementToBeClickable(objLogin.loginButton));
-                try {
-                    log.info("Clicking on the 'Login' button");
-                    act.moveToElement(objLogin.loginButton).click().build().perform();
-                    log.info("'Login' button has clicked");
-                    log.info("Waiting till the 'Setup' menu is display");
-                    wait.until(ExpectedConditions.visibilityOf(objHome.setupMenu));
-                    if (objHome.setupMenu.isDisplayed()) {
-                        if (objHome.setupMenu.getText().equals("Setup")) {
-                            log.info("Waiting till the 'Invoice' menu is display");
-                            wait.until(ExpectedConditions.visibilityOf(objHome.invoiceMenu));
-                            if (objHome.invoiceMenu.isDisplayed()) {
-                                if (objHome.invoiceMenu.getText().equals("Invoice")) {
-                                    test.pass("Biller has able to view the Biller home Page.");
-                                    log.info("Biller has able to view the Biller home Page.");
-                                } else {
-                                    test.fail("'Invoice' menu has deviated from it's expected result.  But it displayed " + objHome.setupMenu.getText());
-                                    log.info("'Invoice' menu has deviated from it's expected result.  But it displayed " + objHome.setupMenu.getText());
-                                }
-                            } else {
-                                log.info("'Invoice' menu has not displayed");
-                                test.fail("'Invoice' menu has not displayed");
-                            }
-                        } else {
-                            test.fail("'Setup' menu has deviated from it's expected result.  But it displayed " + objHome.setupMenu.getText());
-                            log.info("'Setup' menu has deviated from it's expected result.  But it displayed " + objHome.setupMenu.getText());
-                        }
-                    } else {
-                        log.info("'Setup' menu has not displayed");
-                        test.fail("'Setup' menu has not displayed");
-                    }
-                } catch (Exception ex) {
-                    log.info("'Login' button has not clicked, but it displayed the Exception as.." + ex.getMessage());
-                    test.fail("'Login' button has not clicked, but it displayed the Exception as.." + ex.getMessage());
-                }
-                log.info("Waiting till the Page is loading");
-                driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-            } catch (Exception ex) {
-                log.info("Login process has not completed.  But it displayed the Exception as..\n" + ex.getMessage());
-                test.fail("Login process has not completed.  But it displayed the Exception as..\n" + ex.getMessage());
-            }
-        }catch (Exception ex){
-            File screen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"/loginProcess.jpeg"));
-            log.info(ex.getMessage());
-            test.fail(ex.getMessage());
-            test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory")+"/loginProcess.jpeg").build());
-        }
-    }
-
     public static void clickOnInvoiceMenuProcess() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Home objHome = new Obj_Rep_Home();
             PageFactory.initElements(driver, objHome);
@@ -149,6 +50,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void clickOnInvoiceBatch() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Home objHome = new Obj_Rep_Home();
             PageFactory.initElements(driver, objHome);
@@ -199,6 +101,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void clickOnBatchName() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
@@ -247,6 +150,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void clickOnInvoiceNumber() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
@@ -299,6 +203,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void clickOnPaymentHistory() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
@@ -345,8 +250,8 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void enterTransactionReference() throws IOException {
+        getTestData();
         try {
-            getTestData();
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
             WebDriverWait wait = new WebDriverWait(driver, 30);
@@ -398,6 +303,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void placeTheCursorOnTransactionRef() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
@@ -429,8 +335,9 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void enterItemName() throws IOException {
+        getTestData();
         try {
-            getTestData();
+
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
             WebDriverWait wait = new WebDriverWait(driver, 30);
@@ -482,6 +389,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void placeTheCursorOnItemName() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
@@ -512,8 +420,8 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void enterRemarks() throws IOException {
+        getTestData();
         try {
-            getTestData();
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
             WebDriverWait wait = new WebDriverWait(driver, 30);
@@ -567,6 +475,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void placeTheCursorOnRemarks() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
@@ -599,6 +508,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void enterPaymentAmount() throws IOException {
+        getTestData();
         try {
             getTestData();
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
@@ -650,6 +560,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void placeTheCursorOnPaymentAmount() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
@@ -681,8 +592,8 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void enterPaymentDate() throws IOException {
+        getTestData();
         try {
-            getTestData();
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
             WebDriverWait wait = new WebDriverWait(driver, 30);
@@ -732,6 +643,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void placeTheCursorOnPaymentDate() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
@@ -763,6 +675,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void enterPaidBy() throws IOException {
+        getTestData();
         try {
             getTestData();
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
@@ -814,6 +727,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void placeTheCursorOnPaidBy() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
@@ -845,6 +759,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void clickOnAddTransaction() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
@@ -901,8 +816,8 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void checkMantatorySymbolInAddTransaction() throws IOException {
+        getTestData();
         try {
-            getTestData();
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
             WebDriverWait wait = new WebDriverWait(driver, 30);
@@ -995,8 +910,8 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void selectItemName() throws IOException {
+        getTestData();
         try {
-           getTestData();
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
             WebDriverWait wait = new WebDriverWait(driver, 30);
@@ -1034,6 +949,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void checkAmount() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
@@ -1061,6 +977,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void selectTransactionTypeAsRefund() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
@@ -1198,6 +1115,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void selectTransactionTypeAsPayment() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
@@ -1228,6 +1146,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void editAmount() throws IOException {
+        getTestData();
         try {
             getTestData();
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
@@ -1259,6 +1178,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void editRemarks() throws IOException {
+        getTestData();
         try {
             getTestData();
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
@@ -1290,6 +1210,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void clickOnAddBtn() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
@@ -1327,6 +1248,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void checkAddBtn() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
@@ -1352,8 +1274,8 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void checkAmtErrorMsg() throws IOException {
+        getTestData();
         try {
-            getTestData();
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
 
@@ -1399,6 +1321,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void clickOnExternalTransactionLink() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
@@ -1436,6 +1359,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void clickOnDeleteTransactionBtn() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
@@ -1473,6 +1397,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void placeTheCursorOnCloseIconPopup() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
@@ -1530,6 +1455,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void clickOnCloseBtn() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
@@ -1567,6 +1493,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void clickPauseIcon() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
@@ -1599,6 +1526,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void placeTheCursorOnPauseIcon() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
@@ -1660,8 +1588,8 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void checkPopupMessage() throws IOException {
+        getTestData();
         try {
-            getTestData();
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
             WebDriverWait wait = new WebDriverWait(driver, 30);
@@ -1702,8 +1630,8 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void checkDeletePopupMessage() throws IOException {
+        getTestData();
         try {
-            getTestData();
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
             WebDriverWait wait = new WebDriverWait(driver, 30);
@@ -1737,6 +1665,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void clickStopInPauseDialog() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
@@ -1777,6 +1706,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
         }
     }
     public static void clickCancelInPauseDialog() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
@@ -1809,6 +1739,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void clickDeleteIcon() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
@@ -1853,6 +1784,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void clickDeleteInDialog() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
@@ -1910,6 +1842,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void placeTheCursorOnDeleteIcon() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
@@ -2024,21 +1957,8 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void clickOnAddTransactionExportButton() throws IOException {
+        getTestData();
         try {
-            File file = new File("D:\\RinggitPay\\Bills2U\\PROPERTY FILE\\fileUpload.properties");
-            FileInputStream fileInput = null;
-            try {
-                fileInput = new FileInputStream(file);
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
-            }
-
-            Properties prop = new Properties();
-            try {
-                prop.load(fileInput);
-            } catch (Exception ex) {
-                ex.printStackTrace();
-            }
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
             WebDriverWait wait = new WebDriverWait(driver, 30);
@@ -2054,13 +1974,13 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
                     try {
                         act.moveToElement(objInvoice.addTransactionExportBtn).click().build().perform();
                         Thread.sleep(10000);
-                        String downloadPath = prop.getProperty("downloadPath");
+                        String downloadPath = prop.getProperty("Bills2U.FileUpload.DownloadPath");
                         File getLatestFile = getLatestFilefromDir(downloadPath);
                         String fileName = getFileNameWithoutExtension(getLatestFile);
                         System.out.println("File Name :- " + fileName);
 
-                        if (file.exists()) {
-                            assert getLatestFile != null;
+                        assert getLatestFile != null;
+                        if (getLatestFile.exists()) {
                             if (getLatestFile.getName().equals(fileName + ".csv")) {
                                 test.pass("Biller has able to export the details ");
                                 log.info("Biller has able to export the details ");
@@ -2069,7 +1989,6 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
                                 log.info("The latest file not in .csv extension.  But it has the extension as " + getLatestFile.getName());
                             }
                         } else {
-                            assert getLatestFile != null;
                             test.fail("Biller has not able to download the file.  And the latest file name is " + getLatestFile.getName());
                         }
                     } catch (Exception ex) {
@@ -2094,21 +2013,8 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
     }
 
     public static void checkDataInExportSheet() throws IOException {
+        getTestData();
         try {
-            File file = new File("D:\\RinggitPay\\Bills2U\\PROPERTY FILE\\fileUpload.properties");
-            FileInputStream fileInput = null;
-            try {
-                fileInput = new FileInputStream(file);
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
-            }
-
-            Properties prop = new Properties();
-            try {
-                prop.load(fileInput);
-            } catch (Exception ex) {
-                ex.printStackTrace();
-            }
             Obj_Rep_Invoice objInvoice = new Obj_Rep_Invoice();
             PageFactory.initElements(driver, objInvoice);
             Actions act = new Actions(driver);
@@ -2117,7 +2023,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
             int lineNumberCount = 0;
             try {
 
-                String downloadPath = prop.getProperty("downloadPath");
+                String downloadPath = prop.getProperty("Bills2U.FileUpload.DownloadPath");
                 File getLatestFile = getLatestFilefromDir(downloadPath);
                 assert getLatestFile != null;
                 String fileName = getLatestFile.getName();
@@ -2125,7 +2031,7 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
                 System.out.println(downloadPath + getLatestFile.getName());
                 if (getLatestFile.exists()) {
                     System.out.println("File found :" + fileName);
-                    FileReader fr = new FileReader(file);
+                    FileReader fr = new FileReader(getLatestFile);
                     LineNumberReader linenumberreader = new LineNumberReader(fr);
                     while (linenumberreader.readLine() != null) {
                         lineNumberCount++;
@@ -2155,5 +2061,4 @@ public class Invoice_Detail_Process extends Root_Class_TestNG {
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/checkDataInExportSheet.jpeg").build());
         }
     }
-
 }

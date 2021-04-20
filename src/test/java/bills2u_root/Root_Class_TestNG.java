@@ -52,15 +52,14 @@ public class Root_Class_TestNG {
 
     public static Properties prop = null;
     public static StopWatch watch = new StopWatch();
-@Test
+    @Test(priority = 1)
     public void DashboardTest() throws IOException, InterruptedException {
     new Dashboard_Page()
             .TC_Dash_001()
             .TC_Dash_002()
             .TC_Dash_003();
 }
-  /*
-    @Test
+    @Test(priority = 2)
     public void InvoiceBatchListTest() throws IOException {
         new Invoice_Batch_List_Page()
                 .TC_IBL_001()
@@ -85,7 +84,7 @@ public class Root_Class_TestNG {
                 .TC_IBL_020()
                 .TC_IBL_021();
     }
-    @Test
+    @Test(priority = 3)
     public void BatchUploadTest() throws IOException {
         new Batch_upload_page()
                 .TC_BU_001()
@@ -93,7 +92,7 @@ public class Root_Class_TestNG {
                 .TC_BU_003()
                 .TC_BU_004();
     }
-    @Test
+    @Test(priority = 4)
     public void FileUploadTest() throws IOException {
         new File_Upload_Page()
                 .TC_FU_001()
@@ -107,7 +106,7 @@ public class Root_Class_TestNG {
                 .TC_FU_009()
                 .TC_FU_010();
     }
-    @Test
+    @Test(priority = 5)
     public void ReminderSetupTest() throws IOException {
         new Reminder_Setup_Page()
                 .TC_RS_001()
@@ -117,7 +116,7 @@ public class Root_Class_TestNG {
                 .TC_RS_005()
                 .TC_RS_006();
     }
-    @Test
+    @Test(priority = 6)
     public void BatchEntryTest() throws IOException {
         new Batch_Entry_Page()
                 .TC_BE_001()
@@ -126,7 +125,7 @@ public class Root_Class_TestNG {
                 .TC_BE_004()
                 .TC_BE_005();
     }
-    @Test
+    @Test(priority = 7)
     public void InvoiceDetailTest() throws IOException {
         new Invoice_Detail_Page()
                 .TC_ID_001()
@@ -149,7 +148,7 @@ public class Root_Class_TestNG {
                 .TC_ID_018()
                 .TC_ID_019();
     }
-    @Test
+    @Test(priority = 8)
     public void InvoiceListingTest() throws IOException {
         new Invoice_Listing_Page()
                 .TC_IL_001()
@@ -170,7 +169,7 @@ public class Root_Class_TestNG {
                 .TC_IL_016()
                 .TC_IL_017();
     }
-    @Test
+    @Test(priority = 9)
     public void EditInvoiceListTest() throws IOException {
         new Edit_Invoice_List_Page()
                 .TC_EIL_001()
@@ -178,7 +177,7 @@ public class Root_Class_TestNG {
                 .TC_EIL_003()
                 .TC_EIL_004();
     }
-    @Test
+    @Test(priority = 10)
     public void PaymentListingPageTest() throws IOException {
         new Payment_Listing_Page()
                 .TC_PL_001()
@@ -203,7 +202,7 @@ public class Root_Class_TestNG {
                 .TC_PL_020()
                 .TC_PL_021();
     }
-    @Test
+    @Test(priority = 11)
     public void MerchantOnBoardTest() throws IOException {
         new Merchant_On_Board_Page()
                 .TC_MOB_001()
@@ -218,11 +217,10 @@ public class Root_Class_TestNG {
 
     }
 
-*/
-
     @BeforeTest
     public void initProcess() throws IOException {
-        DOMConfigurator.configure("D:\\Bills2U_Automation\\Bills2U_Automation\\src\\test\\java\\log4j.xml");
+        getTestData();
+        DOMConfigurator.configure("log4j.xml");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(CapabilityType.SUPPORTS_NETWORK_CONNECTION, true);
         LoggingPreferences loggingPrefs = new LoggingPreferences();

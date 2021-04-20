@@ -22,6 +22,7 @@ public class Batch_Entry_Process extends Root_Class_TestNG {
     }
 
     public static void GotToInVoiceBatch() throws IOException {
+        getTestData();
         try {
             Obj_Rep_Menu menu = new Obj_Rep_Menu();
             PageFactory.initElements(driver, menu);
@@ -49,6 +50,7 @@ public class Batch_Entry_Process extends Root_Class_TestNG {
     }
 
     public static void ClickBatchEntry() throws IOException {
+        getTestData();
         try {
             Obj_Rep_InvoiceBatchList bList = new Obj_Rep_InvoiceBatchList();
             PageFactory.initElements(driver, bList);
@@ -71,6 +73,7 @@ public class Batch_Entry_Process extends Root_Class_TestNG {
     }
 
     public static void ClickAddInvoice() throws IOException {
+        getTestData();
         try {
             Obj_Rep_BatchEntry bEntry = new Obj_Rep_BatchEntry();
             PageFactory.initElements(driver, bEntry);
@@ -92,6 +95,7 @@ public class Batch_Entry_Process extends Root_Class_TestNG {
     }
 
     public static void VerifyBillsToData() throws IOException {
+        getTestData();
         try {
             Obj_Rep_BatchEntry bEntry = new Obj_Rep_BatchEntry();
             PageFactory.initElements(driver, bEntry);
@@ -138,6 +142,7 @@ public class Batch_Entry_Process extends Root_Class_TestNG {
     }
 
     public static void IssueDateSelect() throws IOException {
+        getTestData();
         try {
             Obj_Rep_BatchEntry bEntry = new Obj_Rep_BatchEntry();
             PageFactory.initElements(driver, bEntry);
@@ -171,6 +176,7 @@ public class Batch_Entry_Process extends Root_Class_TestNG {
     }
 
     public static void DueDateSelect() throws IOException {
+        getTestData();
         try {
             Obj_Rep_BatchEntry bEntry = new Obj_Rep_BatchEntry();
             PageFactory.initElements(driver, bEntry);
@@ -204,6 +210,7 @@ public class Batch_Entry_Process extends Root_Class_TestNG {
     }
 
     public static void ClickSVGIcon() throws IOException {
+        getTestData();
         try {
             Obj_Rep_BatchEntry bEntry = new Obj_Rep_BatchEntry();
             PageFactory.initElements(driver, bEntry);
@@ -226,6 +233,7 @@ public class Batch_Entry_Process extends Root_Class_TestNG {
     }
 
     public static void ClickCheckboxUnitPrice() throws IOException {
+        getTestData();
         try {
             Obj_Rep_BatchEntry bEntry = new Obj_Rep_BatchEntry();
             PageFactory.initElements(driver, bEntry);
@@ -249,6 +257,7 @@ public class Batch_Entry_Process extends Root_Class_TestNG {
     }
 
     public static void ClickCheckboxDescription() throws IOException {
+        getTestData();
         try {
             Obj_Rep_BatchEntry bEntry = new Obj_Rep_BatchEntry();
             PageFactory.initElements(driver, bEntry);
@@ -271,6 +280,7 @@ public class Batch_Entry_Process extends Root_Class_TestNG {
     }
 
     public static void VerifyAddItem() throws IOException {
+        getTestData();
         try {
             Obj_Rep_BatchEntry bEntry = new Obj_Rep_BatchEntry();
             PageFactory.initElements(driver, bEntry);
@@ -318,6 +328,7 @@ public class Batch_Entry_Process extends Root_Class_TestNG {
     }
 
     public static void VerifyAddItemWithoutUnitPrice() throws IOException {
+        getTestData();
         try {
             Obj_Rep_BatchEntry bEntry = new Obj_Rep_BatchEntry();
             PageFactory.initElements(driver, bEntry);
@@ -352,6 +363,7 @@ public class Batch_Entry_Process extends Root_Class_TestNG {
     }
 
     public static void VerifyAddItemWithoutDescription() throws IOException {
+        getTestData();
         try {
             Obj_Rep_BatchEntry bEntry = new Obj_Rep_BatchEntry();
             PageFactory.initElements(driver, bEntry);
@@ -395,6 +407,7 @@ public class Batch_Entry_Process extends Root_Class_TestNG {
     }
 
     public static void ClickNewInvoiceBatchCloseIcon() throws IOException {
+        getTestData();
         try {
             Obj_Rep_BatchEntry bEntry = new Obj_Rep_BatchEntry();
             PageFactory.initElements(driver, bEntry);
@@ -412,6 +425,7 @@ public class Batch_Entry_Process extends Root_Class_TestNG {
     }
 
     public static void ClickItemSaveIcon() throws IOException {
+        getTestData();
         try {
             Obj_Rep_BatchEntry bEntry = new Obj_Rep_BatchEntry();
             PageFactory.initElements(driver, bEntry);
@@ -439,6 +453,7 @@ public class Batch_Entry_Process extends Root_Class_TestNG {
     }
 
     public static void ClickItemSaveIconWithoutUnitPrice() throws IOException {
+        getTestData();
         try {
             Obj_Rep_BatchEntry bEntry = new Obj_Rep_BatchEntry();
             PageFactory.initElements(driver, bEntry);
@@ -464,6 +479,7 @@ public class Batch_Entry_Process extends Root_Class_TestNG {
     }
 
     public static void ClickItemSaveIconWithoutDescription() throws IOException {
+getTestData();
         try {
             Obj_Rep_BatchEntry bEntry = new Obj_Rep_BatchEntry();
             PageFactory.initElements(driver, bEntry);
@@ -490,6 +506,7 @@ public class Batch_Entry_Process extends Root_Class_TestNG {
     }
 
     public static void ClickNewBatchSaveIcon() throws IOException {
+getTestData();
         try {
             Obj_Rep_BatchEntry bEntry = new Obj_Rep_BatchEntry();
             PageFactory.initElements(driver, bEntry);
@@ -513,6 +530,7 @@ public class Batch_Entry_Process extends Root_Class_TestNG {
     }
 
     public static void ClickItemDeleteIcon() throws IOException {
+getTestData();
         try {
             Obj_Rep_BatchEntry bEntry = new Obj_Rep_BatchEntry();
             PageFactory.initElements(driver, bEntry);
@@ -534,6 +552,7 @@ public class Batch_Entry_Process extends Root_Class_TestNG {
     }
 
     public static void VerifyEditItem() throws IOException {
+getTestData();
         try {
             Obj_Rep_BatchEntry bEntry = new Obj_Rep_BatchEntry();
             PageFactory.initElements(driver, bEntry);

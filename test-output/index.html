@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_Suite" class="navigator-link">
-              <span class="suite-name border-passed">Default Suite</span>
+              <span class="suite-name border-failed">Default Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,41 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">11 methods, 5 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_Suite" class="hide-methods failed suite-Default_Suite"> (hide)</a> <!-- hide-methods failed suite-Default_Suite -->
+                      <a href="#" panel-name="suite-Default_Suite" class="show-methods failed suite-Default_Suite"> (show)</a> <!-- show-methods failed suite-Default_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="bills2u_root.Root_Class_TestNG" class="method navigator-link" hash-for-method="EditInvoiceListTest">EditInvoiceListTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="bills2u_root.Root_Class_TestNG" class="method navigator-link" hash-for-method="InvoiceDetailTest">InvoiceDetailTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="bills2u_root.Root_Class_TestNG" class="method navigator-link" hash-for-method="InvoiceListingTest">InvoiceListingTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="bills2u_root.Root_Class_TestNG" class="method navigator-link" hash-for-method="MerchantOnBoardTest">MerchantOnBoardTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="bills2u_root.Root_Class_TestNG" class="method navigator-link" hash-for-method="PaymentListingPageTest">PaymentListingPageTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +138,32 @@
                     <div class="method-list-content passed suite-Default_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="bills2u_root.Root_Class_TestNG" class="method navigator-link" hash-for-method="BatchEntryTest">BatchEntryTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="bills2u_root.Root_Class_TestNG" class="method navigator-link" hash-for-method="BatchUploadTest">BatchUploadTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_Suite" title="bills2u_root.Root_Class_TestNG" class="method navigator-link" hash-for-method="DashboardTest">DashboardTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="bills2u_root.Root_Class_TestNG" class="method navigator-link" hash-for-method="FileUploadTest">FileUploadTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="bills2u_root.Root_Class_TestNG" class="method navigator-link" hash-for-method="InvoiceBatchListTest">InvoiceBatchListTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="bills2u_root.Root_Class_TestNG" class="method navigator-link" hash-for-method="ReminderSetupTest">ReminderSetupTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_Suite -->
@@ -119,6 +178,169 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_Suite" class="panel Default_Suite">
+          <div class="suite-Default_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">bills2u_root.Root_Class_TestNG</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="EditInvoiceListTest">
+                  </a> <!-- EditInvoiceListTest -->
+                  <span class="method-name">EditInvoiceListTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=89.0.4389.128)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-T1A7R18&apos;, ip: &apos;10.20.152.53&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Ascend\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 784da12168d99aeed4b70e467edc21c4
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at bills2u_process.Edit_Invoice_List_Process.GotToInVoiceBatch(Edit_Invoice_List_Process.java:102)
+	at bills2u_suite.Edit_Invoice_List_Page.TC_EIL_001(Edit_Invoice_List_Page.java:13)
+	at bills2u_root.Root_Class_TestNG.EditInvoiceListTest(Root_Class_TestNG.java:175)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="InvoiceDetailTest">
+                  </a> <!-- InvoiceDetailTest -->
+                  <span class="method-name">InvoiceDetailTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=89.0.4389.128)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-T1A7R18&apos;, ip: &apos;10.20.152.53&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Ascend\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 784da12168d99aeed4b70e467edc21c4
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at bills2u_process.Invoice_Detail_Process.clickOnAddBtn(Invoice_Detail_Process.java:1321)
+	at bills2u_suite.Invoice_Detail_Page.TC_ID_011(Invoice_Detail_Page.java:199)
+	at bills2u_root.Root_Class_TestNG.InvoiceDetailTest(Root_Class_TestNG.java:141)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="InvoiceListingTest">
+                  </a> <!-- InvoiceListingTest -->
+                  <span class="method-name">InvoiceListingTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=89.0.4389.128)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-T1A7R18&apos;, ip: &apos;10.20.152.53&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Ascend\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 784da12168d99aeed4b70e467edc21c4
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at bills2u_process.Invoice_Listing_Process.clickOnInvoiceMenuProcess(Invoice_Listing_Process.java:145)
+	at bills2u_suite.Invoice_Listing_Page.TC_IL_001(Invoice_Listing_Page.java:13)
+	at bills2u_root.Root_Class_TestNG.InvoiceListingTest(Root_Class_TestNG.java:154)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MerchantOnBoardTest">
+                  </a> <!-- MerchantOnBoardTest -->
+                  <span class="method-name">MerchantOnBoardTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=89.0.4389.128)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-T1A7R18&apos;, ip: &apos;10.20.152.53&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Ascend\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 784da12168d99aeed4b70e467edc21c4
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at bills2u_process.Merchant_On_Board_Process.clickOnSetupMenuProcess(Merchant_On_Board_Process.java:159)
+	at bills2u_suite.Merchant_On_Board_Page.TC_MOB_001(Merchant_On_Board_Page.java:13)
+	at bills2u_root.Root_Class_TestNG.MerchantOnBoardTest(Root_Class_TestNG.java:208)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PaymentListingPageTest">
+                  </a> <!-- PaymentListingPageTest -->
+                  <span class="method-name">PaymentListingPageTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=89.0.4389.128)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-T1A7R18&apos;, ip: &apos;10.20.152.53&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Ascend\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 784da12168d99aeed4b70e467edc21c4
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at bills2u_process.Payment_Listing_Process.clickOnInvoiceMenuProcess(Payment_Listing_Process.java:146)
+	at bills2u_suite.Payment_Listing_Page.TC_PL_001(Payment_Listing_Page.java:13)
+	at bills2u_root.Root_Class_TestNG.PaymentListingPageTest(Root_Class_TestNG.java:183)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-failed -->
           <div class="suite-Default_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -127,9 +349,44 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="BatchEntryTest">
+                  </a> <!-- BatchEntryTest -->
+                  <span class="method-name">BatchEntryTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BatchUploadTest">
+                  </a> <!-- BatchUploadTest -->
+                  <span class="method-name">BatchUploadTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="DashboardTest">
                   </a> <!-- DashboardTest -->
                   <span class="method-name">DashboardTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FileUploadTest">
+                  </a> <!-- FileUploadTest -->
+                  <span class="method-name">FileUploadTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="InvoiceBatchListTest">
+                  </a> <!-- InvoiceBatchListTest -->
+                  <span class="method-name">InvoiceBatchListTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ReminderSetupTest">
+                  </a> <!-- ReminderSetupTest -->
+                  <span class="method-name">ReminderSetupTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -186,16 +443,56 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'DashboardTest')
+data.setCell(0, 1, 'InvoiceDetailTest')
 data.setCell(0, 2, 'bills2u_root.Root_Class_TestNG')
-data.setCell(0, 3, 260730);
+data.setCell(0, 3, 3405456);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'FileUploadTest')
+data.setCell(1, 2, 'bills2u_root.Root_Class_TestNG')
+data.setCell(1, 3, 758810);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'InvoiceBatchListTest')
+data.setCell(2, 2, 'bills2u_root.Root_Class_TestNG')
+data.setCell(2, 3, 660704);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'BatchEntryTest')
+data.setCell(3, 2, 'bills2u_root.Root_Class_TestNG')
+data.setCell(3, 3, 442775);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'ReminderSetupTest')
+data.setCell(4, 2, 'bills2u_root.Root_Class_TestNG')
+data.setCell(4, 3, 399344);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'BatchUploadTest')
+data.setCell(5, 2, 'bills2u_root.Root_Class_TestNG')
+data.setCell(5, 3, 193194);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'DashboardTest')
+data.setCell(6, 2, 'bills2u_root.Root_Class_TestNG')
+data.setCell(6, 3, 123958);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'InvoiceListingTest')
+data.setCell(7, 2, 'bills2u_root.Root_Class_TestNG')
+data.setCell(7, 3, 60579);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'MerchantOnBoardTest')
+data.setCell(8, 2, 'bills2u_root.Root_Class_TestNG')
+data.setCell(8, 3, 60561);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'PaymentListingPageTest')
+data.setCell(9, 2, 'bills2u_root.Root_Class_TestNG')
+data.setCell(9, 3, 60529);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'EditInvoiceListTest')
+data.setCell(10, 2, 'bills2u_root.Root_Class_TestNG')
+data.setCell(10, 3, 30292);
 window.suiteTableData['Default_Suite']= { tableData: data, tableDiv: 'times-div-Default_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <span class="suite-total-time">Total running time: 1 hours</span>
               <div id="times-div-Default_Suite">
               </div> <!-- times-div-Default_Suite -->
             </div> <!-- times-div -->
@@ -206,6 +503,16 @@ return data;
             <span class="header-content">Reporter output for Default Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">BatchEntryTest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Biller able to navigate to the "Invoice batch" page</span>
+                <span class="reporter-method-output">Biller able to navigate to the "Invoice batch" page</span>
+                <span class="reporter-method-output">Biller able to navigate to the "Invoice batch" page</span>
+                <span class="reporter-method-output">Biller able to navigate to the "Invoice batch" page</span>
+                <span class="reporter-method-output">Biller able to navigate to the "Invoice batch" page</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_Suite" class="panel">
@@ -228,16 +535,67 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">DashboardTest</span>
-                <span class="method-start">9158 ms</span>
+                <span class="method-start">8152 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">InvoiceBatchListTest</span>
+                <span class="method-start">132124 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">BatchUploadTest</span>
+                <span class="method-start">792832 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">FileUploadTest</span>
+                <span class="method-start">986029 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ReminderSetupTest</span>
+                <span class="method-start">1744842 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">BatchEntryTest</span>
+                <span class="method-start">2144188 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">InvoiceDetailTest</span>
+                <span class="method-start">2586964 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">InvoiceListingTest</span>
+                <span class="method-start">5992471 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">EditInvoiceListTest</span>
+                <span class="method-start">6053056 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">PaymentListingPageTest</span>
+                <span class="method-start">6083354 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">MerchantOnBoardTest</span>
+                <span class="method-start">6143890 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">exitProcess</span>
-                <span class="method-start">269896 ms</span>
+                <span class="method-start">6204459 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
+    </div>
   </body>
 <script type="text/javascript" src="testng-reports2.js"></script>
 </html>
