@@ -1,10 +1,9 @@
-package bills2u_root;
+package test.java.bills2u_root__pack;
 
 import Config.PropertyClass;
 import bills2u_constant.Obj_Rep_Home;
 import bills2u_constant.Obj_Rep_Login;
 import bills2u_constant.Obj_Rep_Logout;
-import bills2u_suite.*;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
@@ -54,14 +53,14 @@ public class Root_Class_TestNG {
     public static StopWatch watch = new StopWatch();
     @Test(priority = 1)
     public void DashboardTest() throws IOException, InterruptedException {
-    new Dashboard_Page()
+    new bills2u_suite.Dashboard_Page()
             .TC_Dash_001()
             .TC_Dash_002()
             .TC_Dash_003();
 }
-    @Test(priority = 2,enabled = false)
+    @Test(priority = 2)
     public void InvoiceBatchListTest() throws IOException {
-        new Invoice_Batch_List_Page()
+        new bills2u_suite.Invoice_Batch_List_Page()
                 .TC_IBL_001()
                 .TC_IBL_002()
                 .TC_IBL_003()
@@ -84,17 +83,17 @@ public class Root_Class_TestNG {
                 .TC_IBL_020()
                 .TC_IBL_021();
     }
-    @Test(priority = 3,enabled = false)
+    @Test(priority = 3)
     public void BatchUploadTest() throws IOException {
-        new Batch_upload_page()
+        new bills2u_suite.Batch_upload_page()
                 .TC_BU_001()
                 .TC_BU_002()
                 .TC_BU_003()
                 .TC_BU_004();
     }
-    @Test(priority = 4,enabled = false)
+    @Test(priority = 4)
     public void FileUploadTest() throws IOException {
-        new File_Upload_Page()
+        new bills2u_suite.File_Upload_Page()
                 .TC_FU_001()
                 .TC_FU_002()
                 .TC_FU_003()
@@ -106,9 +105,9 @@ public class Root_Class_TestNG {
                 .TC_FU_009()
                 .TC_FU_010();
     }
-    @Test(priority = 5,enabled = false)
+    @Test(priority = 5)
     public void ReminderSetupTest() throws IOException {
-        new Reminder_Setup_Page()
+        new bills2u_suite.Reminder_Setup_Page()
                 .TC_RS_001()
                 .TC_RS_002()
                 .TC_RS_003()
@@ -116,18 +115,18 @@ public class Root_Class_TestNG {
                 .TC_RS_005()
                 .TC_RS_006();
     }
-    @Test(priority = 6,enabled = false)
+    @Test(priority = 6)
     public void BatchEntryTest() throws IOException {
-        new Batch_Entry_Page()
+        new bills2u_suite.Batch_Entry_Page()
                 .TC_BE_001()
                 .TC_BE_002()
                 .TC_BE_003()
                 .TC_BE_004()
                 .TC_BE_005();
     }
-    @Test(priority = 7,enabled = false)
+    @Test(priority = 7)
     public void InvoiceDetailTest() throws IOException {
-        new Invoice_Detail_Page()
+        new bills2u_suite.Invoice_Detail_Page()
                 .TC_ID_001()
                 .TC_ID_002()
                 .TC_ID_003()
@@ -148,9 +147,9 @@ public class Root_Class_TestNG {
                 .TC_ID_018()
                 .TC_ID_019();
     }
-    @Test(priority = 8,enabled = false)
+    @Test(priority = 8)
     public void InvoiceListingTest() throws IOException {
-        new Invoice_Listing_Page()
+        new bills2u_suite.Invoice_Listing_Page()
                 .TC_IL_001()
                 .TC_IL_002()
                 .TC_IL_003()
@@ -169,17 +168,17 @@ public class Root_Class_TestNG {
                 .TC_IL_016()
                 .TC_IL_017();
     }
-    @Test(priority = 9,enabled = false)
+    @Test(priority = 9)
     public void EditInvoiceListTest() throws IOException {
-        new Edit_Invoice_List_Page()
+        new bills2u_suite.Edit_Invoice_List_Page()
                 .TC_EIL_001()
                 .TC_EIL_002()
                 .TC_EIL_003()
                 .TC_EIL_004();
     }
-    @Test(priority = 10,enabled = false)
+    @Test(priority = 10)
     public void PaymentListingPageTest() throws IOException {
-        new Payment_Listing_Page()
+        new bills2u_suite.Payment_Listing_Page()
                 .TC_PL_001()
                 .TC_PL_002()
                 .TC_PL_003()
@@ -202,9 +201,9 @@ public class Root_Class_TestNG {
                 .TC_PL_020()
                 .TC_PL_021();
     }
-    @Test(priority = 11,enabled = false)
+    @Test(priority = 11)
     public void MerchantOnBoardTest() throws IOException {
-        new Merchant_On_Board_Page()
+        new bills2u_suite.Merchant_On_Board_Page()
                 .TC_MOB_001()
                 .TC_MOB_002()
                 .TC_MOB_003()

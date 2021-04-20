@@ -1,4 +1,4 @@
-package bills2u_root;
+package test.java.bills2u_root__pack;
 
 import Config.PropertyClass;
 import bills2u_suite.Invoices_Payers_Page;
