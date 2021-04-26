@@ -1,7 +1,7 @@
-package bills2u_process;
+package test.java.bills2u_process;
 
-import bills2u_constant.*;
-import bills2u_root.Root_Class_Payers;
+import test.java.bills2u_constant.*;
+import test.java.bills2u_root.Root_Class_Payers;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -9,6 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import test.java.bills2u_root.Root_Class_Payers;
 
 import java.io.File;
 import java.io.FileInputStream;

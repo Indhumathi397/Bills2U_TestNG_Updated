@@ -9181,3 +9181,318 @@ Expected condition failed: waiting for visibility of Proxy element for: DefaultE
 2021-04-19 12:54:39,307 INFO  [Root_Class_TestNG] Waiting till the 'Invoice Number' is visible 
 2021-04-19 12:55:39,664 INFO  [Root_Class_TestNG] Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: /html/body/app-root/div/app-layout/mat-sidenav-container/mat-sidenav-content/div[1]/app-invoice-batch-edit/invoice-list/mat-card/mat-card-content/mat-table/mat-row[1]/mat-cell[1]/a' (tried for 30 second(s) with 500 milliseconds interval) 
 2021-04-19 12:55:39,665 INFO  [Root_Class_TestNG] Waiting till the 'Payment History' button is visible 
+2021-04-21 14:48:38,988 INFO  [Root_Class_TestNG] trace logging enabled[server, performance, driver, browser, client, profiler] 
+2021-04-21 14:48:39,123 INFO  [Root_Class_TestNG] Opening Chrome browser 
+2021-04-21 14:48:44,261 INFO  [Root_Class_TestNG] Chrome browser has launched 
+2021-04-21 14:48:44,262 INFO  [Root_Class_TestNG] Navigating to Billers portal 
+2021-04-21 14:48:52,150 INFO  [Root_Class_TestNG] Billers portal has launched 
+2021-04-21 14:48:52,150 INFO  [Root_Class_TestNG] Waiting till the Page is load 
+2021-04-21 14:48:52,154 INFO  [Root_Class_TestNG] Browser has waited till the page is load 
+2021-04-21 14:48:52,154 INFO  [Root_Class_TestNG] Maximizing window 
+2021-04-21 14:48:52,319 INFO  [Root_Class_TestNG] Window has maximized 
+2021-04-21 14:48:52,434 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is display 
+2021-04-21 14:48:52,539 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is click 
+2021-04-21 14:48:52,676 INFO  [Root_Class_TestNG] Clicking on the 'Login now' button 
+2021-04-21 14:48:57,280 INFO  [Root_Class_TestNG] Login Now has clicked 
+2021-04-21 14:48:57,282 INFO  [Root_Class_TestNG] Waiting till the Username text box is display 
+2021-04-21 14:48:57,322 INFO  [Root_Class_TestNG] Entering username 
+2021-04-21 14:48:57,393 INFO  [Root_Class_TestNG] Username has entered. 
+2021-04-21 14:48:57,393 INFO  [Root_Class_TestNG] Waiting till the 'Password' is display 
+2021-04-21 14:48:57,439 INFO  [Root_Class_TestNG] Entering password 
+2021-04-21 14:48:57,511 INFO  [Root_Class_TestNG] Password has entered 
+2021-04-21 14:48:57,511 INFO  [Root_Class_TestNG] Waiting till the 'Login' button is display 
+2021-04-21 14:48:57,541 INFO  [Root_Class_TestNG] Waiting till the 'Login' button is click 
+2021-04-21 14:48:57,585 INFO  [Root_Class_TestNG] Clicking on the 'Login' button 
+2021-04-21 14:49:00,802 INFO  [Root_Class_TestNG] 'Login' button has clicked 
+2021-04-21 14:49:00,802 INFO  [Root_Class_TestNG] Waiting till the 'Setup' menu is display 
+2021-04-21 14:49:06,060 INFO  [Root_Class_TestNG] Waiting till the 'Invoice' menu is display 
+2021-04-21 14:49:06,263 INFO  [Root_Class_TestNG] Biller has able to view the Biller home Page. 
+2021-04-21 14:49:06,263 INFO  [Root_Class_TestNG] Waiting till the Page is loading 
+2021-04-26 13:21:13,742 INFO  [Root_Class_TestNG] trace logging enabled[server, performance, driver, browser, client, profiler] 
+2021-04-26 13:21:13,851 INFO  [Root_Class_TestNG] Opening Chrome browser 
+2021-04-26 13:21:17,711 INFO  [Root_Class_TestNG] Chrome browser has not opened, but it displayed the Exception as...
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T1A7R18', ip: '10.20.152.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver 
+2021-04-26 13:21:17,711 INFO  [Root_Class_TestNG] Navigating to Billers portal 
+2021-04-26 13:21:17,713 INFO  [Root_Class_TestNG] Billers portal has not launched.  but it displayed the Exception as..
+Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:21:17,713 INFO  [Root_Class_TestNG] Waiting till the Page is load 
+2021-04-26 13:21:17,713 INFO  [Root_Class_TestNG] Browser has not wait till the page is load.  but it displayed the exception as...
+Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:21:17,713 INFO  [Root_Class_TestNG] Maximizing window 
+2021-04-26 13:21:17,714 INFO  [Root_Class_TestNG] Window has not maximized.  but it displayed exception as...
+Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:21:17,878 INFO  [Root_Class_TestNG] Quiting the browser 
+2021-04-26 13:21:59,265 INFO  [Root_Class_TestNG] trace logging enabled[server, performance, driver, browser, client, profiler] 
+2021-04-26 13:21:59,466 INFO  [Root_Class_TestNG] Opening Chrome browser 
+2021-04-26 13:22:02,085 INFO  [Root_Class_TestNG] Chrome browser has not opened, but it displayed the Exception as...
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T1A7R18', ip: '10.20.152.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver 
+2021-04-26 13:22:02,085 INFO  [Root_Class_TestNG] Navigating to Billers portal 
+2021-04-26 13:22:02,085 INFO  [Root_Class_TestNG] Billers portal has not launched.  but it displayed the Exception as..
+Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:22:02,085 INFO  [Root_Class_TestNG] Waiting till the Page is load 
+2021-04-26 13:22:02,085 INFO  [Root_Class_TestNG] Browser has not wait till the page is load.  but it displayed the exception as...
+Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:22:02,085 INFO  [Root_Class_TestNG] Maximizing window 
+2021-04-26 13:22:02,085 INFO  [Root_Class_TestNG] Window has not maximized.  but it displayed exception as...
+Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:22:02,229 INFO  [Root_Class_TestNG] Quiting the browser 
+2021-04-26 13:26:47,488 INFO  [Root_Class_TestNG] trace logging enabled[server, performance, driver, browser, client, profiler] 
+2021-04-26 13:26:47,623 INFO  [Root_Class_TestNG] Opening Chrome browser 
+2021-04-26 13:26:50,256 INFO  [Root_Class_TestNG] Chrome browser has not opened, but it displayed the Exception as...
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T1A7R18', ip: '10.20.152.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver 
+2021-04-26 13:26:50,256 INFO  [Root_Class_TestNG] Navigating to Billers portal 
+2021-04-26 13:26:50,257 INFO  [Root_Class_TestNG] Billers portal has not launched.  but it displayed the Exception as..
+Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:26:50,257 INFO  [Root_Class_TestNG] Waiting till the Page is load 
+2021-04-26 13:26:50,258 INFO  [Root_Class_TestNG] Browser has not wait till the page is load.  but it displayed the exception as...
+Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:26:50,258 INFO  [Root_Class_TestNG] Maximizing window 
+2021-04-26 13:26:50,259 INFO  [Root_Class_TestNG] Window has not maximized.  but it displayed exception as...
+Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:26:50,387 INFO  [Root_Class_TestNG] Quiting the browser 
+2021-04-26 13:29:49,475 INFO  [Root_Class_TestNG] trace logging enabled[server, performance, driver, browser, client, profiler] 
+2021-04-26 13:29:49,600 INFO  [Root_Class_TestNG] Opening Chrome browser 
+2021-04-26 13:29:52,201 INFO  [Root_Class_TestNG] Chrome browser has not opened, but it displayed the Exception as...
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T1A7R18', ip: '10.20.152.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver 
+2021-04-26 13:29:52,202 INFO  [Root_Class_TestNG] Navigating to Billers portal 
+2021-04-26 13:29:52,202 INFO  [Root_Class_TestNG] Billers portal has not launched.  but it displayed the Exception as..
+Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:29:52,202 INFO  [Root_Class_TestNG] Waiting till the Page is load 
+2021-04-26 13:29:52,203 INFO  [Root_Class_TestNG] Browser has not wait till the page is load.  but it displayed the exception as...
+Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:29:52,203 INFO  [Root_Class_TestNG] Maximizing window 
+2021-04-26 13:29:52,203 INFO  [Root_Class_TestNG] Window has not maximized.  but it displayed exception as...
+Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:29:52,348 INFO  [Root_Class_TestNG] Quiting the browser 
+2021-04-26 13:30:52,030 INFO  [Root_Class_TestNG] trace logging enabled[server, performance, driver, browser, client, profiler] 
+2021-04-26 13:30:52,159 INFO  [Root_Class_TestNG] Opening Chrome browser 
+2021-04-26 13:30:54,767 INFO  [Root_Class_TestNG] Chrome browser has not opened, but it displayed the Exception as...
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T1A7R18', ip: '10.20.152.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver 
+2021-04-26 13:30:54,768 INFO  [Root_Class_TestNG] Navigating to Billers portal 
+2021-04-26 13:30:54,769 INFO  [Root_Class_TestNG] Billers portal has not launched.  but it displayed the Exception as..
+Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:30:54,769 INFO  [Root_Class_TestNG] Waiting till the Page is load 
+2021-04-26 13:30:54,770 INFO  [Root_Class_TestNG] Browser has not wait till the page is load.  but it displayed the exception as...
+Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:30:54,770 INFO  [Root_Class_TestNG] Maximizing window 
+2021-04-26 13:30:54,771 INFO  [Root_Class_TestNG] Window has not maximized.  but it displayed exception as...
+Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:30:54,914 INFO  [Root_Class_TestNG] Quiting the browser 
+2021-04-26 13:31:57,392 INFO  [Root_Class_TestNG] trace logging enabled[server, performance, driver, browser, client, profiler] 
+2021-04-26 13:31:57,565 INFO  [Root_Class_TestNG] Opening Chrome browser 
+2021-04-26 13:32:00,159 INFO  [Root_Class_TestNG] Chrome browser has not opened, but it displayed the Exception as...
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T1A7R18', ip: '10.20.152.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver 
+2021-04-26 13:32:00,159 INFO  [Root_Class_TestNG] Navigating to Billers portal 
+2021-04-26 13:32:00,159 INFO  [Root_Class_TestNG] Billers portal has not launched.  but it displayed the Exception as..
+Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:32:00,159 INFO  [Root_Class_TestNG] Waiting till the Page is load 
+2021-04-26 13:32:00,160 INFO  [Root_Class_TestNG] Browser has not wait till the page is load.  but it displayed the exception as...
+Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:32:00,160 INFO  [Root_Class_TestNG] Maximizing window 
+2021-04-26 13:32:00,160 INFO  [Root_Class_TestNG] Window has not maximized.  but it displayed exception as...
+Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:32:00,279 INFO  [Root_Class_TestNG] Quiting the browser 
+2021-04-26 13:32:41,021 INFO  [Root_Class_TestNG] trace logging enabled[server, performance, driver, browser, client, profiler] 
+2021-04-26 13:32:41,164 INFO  [Root_Class_TestNG] Opening Chrome browser 
+2021-04-26 13:32:43,231 INFO  [Root_Class_TestNG] Chrome browser has launched 
+2021-04-26 13:32:43,231 INFO  [Root_Class_TestNG] Navigating to Billers portal 
+2021-04-26 13:32:47,966 INFO  [Root_Class_TestNG] Billers portal has launched 
+2021-04-26 13:32:47,966 INFO  [Root_Class_TestNG] Waiting till the Page is load 
+2021-04-26 13:32:47,975 INFO  [Root_Class_TestNG] Browser has waited till the page is load 
+2021-04-26 13:32:47,975 INFO  [Root_Class_TestNG] Maximizing window 
+2021-04-26 13:32:48,006 INFO  [Root_Class_TestNG] Window has not maximized.  but it displayed exception as...
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=89.0.4389.128)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T1A7R18', ip: '10.20.152.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Ascend\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51345}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 856ce69b4f34fe516c340362a3a8d951 
+2021-04-26 13:32:48,050 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is display 
+2021-04-26 13:33:18,411 INFO  [Root_Class_TestNG] Login process has not completed.  But it displayed the Exception as..
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=89.0.4389.128)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T1A7R18', ip: '10.20.152.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Ascend\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51345}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 856ce69b4f34fe516c340362a3a8d951
+*** Element info: {Using=xpath, value=/html/body/app-root/div/app-layout/mat-sidenav-container/mat-sidenav-content/div[1]/app-landing/div[1]/div/div[2]/div/button/span[1]} 
+2021-04-26 13:33:18,450 INFO  [Root_Class_TestNG] Waiting till the 'Login Now' button is display 
+2021-04-26 13:35:24,120 INFO  [Root_Class_TestNG] trace logging enabled[server, performance, driver, browser, client, profiler] 
+2021-04-26 13:35:24,247 INFO  [Root_Class_TestNG] Opening Chrome browser 
+2021-04-26 13:35:24,982 INFO  [Root_Class_TestNG] Chrome browser has not opened, but it displayed the Exception as...
+Error forwarding the new session Empty pool of VM for setup Capabilities {browserName: chrome, loggingPrefs: org.openqa.selenium.logging..., networkConnectionEnabled: true, platform: WINDOWS}
+Command duration or timeout: 208 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T1A7R18', ip: '10.20.152.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver 
+2021-04-26 13:35:24,982 INFO  [Root_Class_TestNG] Navigating to Billers portal 
+2021-04-26 13:35:24,982 INFO  [Root_Class_TestNG] Billers portal has not launched.  but it displayed the Exception as..
+Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:35:24,982 INFO  [Root_Class_TestNG] Waiting till the Page is load 
+2021-04-26 13:35:24,982 INFO  [Root_Class_TestNG] Browser has not wait till the page is load.  but it displayed the exception as...
+Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:35:24,982 INFO  [Root_Class_TestNG] Maximizing window 
+2021-04-26 13:35:24,982 INFO  [Root_Class_TestNG] Window has not maximized.  but it displayed exception as...
+Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:35:25,101 INFO  [Root_Class_TestNG] Quiting the browser 
+2021-04-26 13:35:32,141 INFO  [Root_Class_TestNG] trace logging enabled[server, performance, driver, browser, client, profiler] 
+2021-04-26 13:35:32,254 INFO  [Root_Class_TestNG] Opening Chrome browser 
+2021-04-26 13:35:32,844 INFO  [Root_Class_TestNG] Chrome browser has not opened, but it displayed the Exception as...
+Error forwarding the new session Empty pool of VM for setup Capabilities {browserName: chrome, loggingPrefs: org.openqa.selenium.logging..., networkConnectionEnabled: true, platform: WINDOWS}
+Command duration or timeout: 67 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T1A7R18', ip: '10.20.152.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver 
+2021-04-26 13:35:32,845 INFO  [Root_Class_TestNG] Navigating to Billers portal 
+2021-04-26 13:35:32,845 INFO  [Root_Class_TestNG] Billers portal has not launched.  but it displayed the Exception as..
+Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:35:32,845 INFO  [Root_Class_TestNG] Waiting till the Page is load 
+2021-04-26 13:35:32,845 INFO  [Root_Class_TestNG] Browser has not wait till the page is load.  but it displayed the exception as...
+Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:35:32,845 INFO  [Root_Class_TestNG] Maximizing window 
+2021-04-26 13:35:32,845 INFO  [Root_Class_TestNG] Window has not maximized.  but it displayed exception as...
+Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:35:32,967 INFO  [Root_Class_TestNG] Quiting the browser 
+2021-04-26 13:35:54,384 INFO  [Root_Class_TestNG] trace logging enabled[server, performance, driver, browser, client, profiler] 
+2021-04-26 13:35:54,513 INFO  [Root_Class_TestNG] Opening Chrome browser 
+2021-04-26 13:35:55,140 INFO  [Root_Class_TestNG] Chrome browser has not opened, but it displayed the Exception as...
+Error forwarding the new session Empty pool of VM for setup Capabilities {browserName: chrome, loggingPrefs: org.openqa.selenium.logging..., networkConnectionEnabled: true, platform: WINDOWS}
+Command duration or timeout: 63 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T1A7R18', ip: '10.20.152.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver 
+2021-04-26 13:35:55,140 INFO  [Root_Class_TestNG] Navigating to Billers portal 
+2021-04-26 13:35:55,140 INFO  [Root_Class_TestNG] Billers portal has not launched.  but it displayed the Exception as..
+Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:35:55,140 INFO  [Root_Class_TestNG] Waiting till the Page is load 
+2021-04-26 13:35:55,140 INFO  [Root_Class_TestNG] Browser has not wait till the page is load.  but it displayed the exception as...
+Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:35:55,140 INFO  [Root_Class_TestNG] Maximizing window 
+2021-04-26 13:35:55,140 INFO  [Root_Class_TestNG] Window has not maximized.  but it displayed exception as...
+Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:35:55,277 INFO  [Root_Class_TestNG] Quiting the browser 
+2021-04-26 13:47:09,176 INFO  [Root_Class_TestNG] trace logging enabled[server, performance, driver, browser, client, profiler] 
+2021-04-26 13:47:09,326 INFO  [Root_Class_TestNG] Opening Chrome browser 
+2021-04-26 13:47:12,127 INFO  [Root_Class_TestNG] Chrome browser has not opened, but it displayed the Exception as...
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T1A7R18', ip: '10.20.152.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver 
+2021-04-26 13:47:12,127 INFO  [Root_Class_TestNG] Navigating to Billers portal 
+2021-04-26 13:47:12,127 INFO  [Root_Class_TestNG] Billers portal has not launched.  but it displayed the Exception as..
+Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:47:12,127 INFO  [Root_Class_TestNG] Waiting till the Page is load 
+2021-04-26 13:47:12,128 INFO  [Root_Class_TestNG] Browser has not wait till the page is load.  but it displayed the exception as...
+Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:47:12,128 INFO  [Root_Class_TestNG] Maximizing window 
+2021-04-26 13:47:12,128 INFO  [Root_Class_TestNG] Window has not maximized.  but it displayed exception as...
+Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:47:12,253 INFO  [Root_Class_TestNG] Quiting the browser 
+2021-04-26 13:50:13,577 INFO  [Root_Class_TestNG] trace logging enabled[server, performance, driver, browser, client, profiler] 
+2021-04-26 13:50:13,732 INFO  [Root_Class_TestNG] Opening Chrome browser 
+2021-04-26 13:50:16,432 INFO  [Root_Class_TestNG] Chrome browser has not opened, but it displayed the Exception as...
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T1A7R18', ip: '10.20.152.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver 
+2021-04-26 13:50:16,432 INFO  [Root_Class_TestNG] Navigating to Billers portal 
+2021-04-26 13:50:16,433 INFO  [Root_Class_TestNG] Billers portal has not launched.  but it displayed the Exception as..
+Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:50:16,433 INFO  [Root_Class_TestNG] Waiting till the Page is load 
+2021-04-26 13:50:16,433 INFO  [Root_Class_TestNG] Browser has not wait till the page is load.  but it displayed the exception as...
+Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:50:16,433 INFO  [Root_Class_TestNG] Maximizing window 
+2021-04-26 13:50:16,433 INFO  [Root_Class_TestNG] Window has not maximized.  but it displayed exception as...
+Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:50:16,560 INFO  [Root_Class_TestNG] Quiting the browser 
+2021-04-26 13:50:54,450 INFO  [Root_Class_TestNG] trace logging enabled[server, performance, driver, browser, client, profiler] 
+2021-04-26 13:50:54,613 INFO  [Root_Class_TestNG] Opening Chrome browser 
+2021-04-26 13:50:57,314 INFO  [Root_Class_TestNG] Chrome browser has not opened, but it displayed the Exception as...
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T1A7R18', ip: '10.20.152.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver 
+2021-04-26 13:50:57,314 INFO  [Root_Class_TestNG] Navigating to Billers portal 
+2021-04-26 13:50:57,314 INFO  [Root_Class_TestNG] Billers portal has not launched.  but it displayed the Exception as..
+Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:50:57,314 INFO  [Root_Class_TestNG] Waiting till the Page is load 
+2021-04-26 13:50:57,315 INFO  [Root_Class_TestNG] Browser has not wait till the page is load.  but it displayed the exception as...
+Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:50:57,315 INFO  [Root_Class_TestNG] Maximizing window 
+2021-04-26 13:50:57,315 INFO  [Root_Class_TestNG] Window has not maximized.  but it displayed exception as...
+Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:50:57,450 INFO  [Root_Class_TestNG] Quiting the browser 
+2021-04-26 13:59:45,088 INFO  [Root_Class_TestNG] trace logging enabled[server, performance, driver, browser, client, profiler] 
+2021-04-26 13:59:45,214 INFO  [Root_Class_TestNG] Opening Chrome browser 
+2021-04-26 13:59:47,945 INFO  [Root_Class_TestNG] Chrome browser has not opened, but it displayed the Exception as...
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T1A7R18', ip: '10.20.152.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver 
+2021-04-26 13:59:47,945 INFO  [Root_Class_TestNG] Navigating to Billers portal 
+2021-04-26 13:59:47,946 INFO  [Root_Class_TestNG] Billers portal has not launched.  but it displayed the Exception as..
+Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:59:47,946 INFO  [Root_Class_TestNG] Waiting till the Page is load 
+2021-04-26 13:59:47,946 INFO  [Root_Class_TestNG] Browser has not wait till the page is load.  but it displayed the exception as...
+Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:59:47,947 INFO  [Root_Class_TestNG] Maximizing window 
+2021-04-26 13:59:47,947 INFO  [Root_Class_TestNG] Window has not maximized.  but it displayed exception as...
+Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 13:59:48,069 INFO  [Root_Class_TestNG] Quiting the browser 
+2021-04-26 14:00:51,010 INFO  [Root_Class_TestNG] trace logging enabled[server, performance, driver, browser, client, profiler] 
+2021-04-26 14:00:51,149 INFO  [Root_Class_TestNG] Opening Chrome browser 
+2021-04-26 14:00:51,849 INFO  [Root_Class_TestNG] Chrome browser has not opened, but it displayed the Exception as...
+Error forwarding the new session Empty pool of VM for setup Capabilities {browserName: chrome, loggingPrefs: org.openqa.selenium.logging..., networkConnectionEnabled: true, platform: WINDOWS}
+Command duration or timeout: 294 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T1A7R18', ip: '10.20.152.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver 
+2021-04-26 14:00:51,849 INFO  [Root_Class_TestNG] Navigating to Billers portal 
+2021-04-26 14:00:51,849 INFO  [Root_Class_TestNG] Billers portal has not launched.  but it displayed the Exception as..
+Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 14:00:51,849 INFO  [Root_Class_TestNG] Waiting till the Page is load 
+2021-04-26 14:00:51,849 INFO  [Root_Class_TestNG] Browser has not wait till the page is load.  but it displayed the exception as...
+Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 14:00:51,849 INFO  [Root_Class_TestNG] Maximizing window 
+2021-04-26 14:00:51,849 INFO  [Root_Class_TestNG] Window has not maximized.  but it displayed exception as...
+Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.java.bills2u_root.Root_Class_TestNG.driver" is null 
+2021-04-26 14:00:51,959 INFO  [Root_Class_TestNG] Quiting the browser 
+2021-04-26 15:19:23,357 INFO  [Root_Class_TestNG] trace logging enabled[server, performance, driver, browser, client, profiler] 
+2021-04-26 15:19:23,455 INFO  [Root_Class_TestNG] Opening Chrome browser 
+2021-04-26 15:19:26,236 INFO  [Root_Class_TestNG] Chrome browser has not opened, but it displayed the Exception as...
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-T1A7R18', ip: '10.20.152.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: driver.version: RemoteWebDriver 
+2021-04-26 15:19:26,236 INFO  [Root_Class_TestNG] Navigating to Billers portal 
+2021-04-26 15:19:26,237 INFO  [Root_Class_TestNG] Billers portal has not launched.  but it displayed the Exception as..
+null 
+2021-04-26 15:19:26,237 INFO  [Root_Class_TestNG] Waiting till the Page is load 
+2021-04-26 15:19:26,237 INFO  [Root_Class_TestNG] Browser has not wait till the page is load.  but it displayed the exception as...
+null 
+2021-04-26 15:19:26,237 INFO  [Root_Class_TestNG] Maximizing window 
+2021-04-26 15:19:26,237 INFO  [Root_Class_TestNG] Window has not maximized.  but it displayed exception as...
+null 
+2021-04-26 15:19:26,404 INFO  [Root_Class_TestNG] Quiting the browser 

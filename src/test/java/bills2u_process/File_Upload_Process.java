@@ -1,10 +1,6 @@
-package bills2u_process;
+package test.java.bills2u_process;
 
-import Config.PropertyClass;
-import bills2u_constant.Obj_Rep_Home;
-import bills2u_constant.Obj_Rep_Invoice;
-import bills2u_constant.Obj_Rep_Tooltip;
-import bills2u_root.Root_Class_TestNG;
+import test.java.Config.PropertyClass;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.google.common.io.Files;
 import com.opencsv.CSVReader;
@@ -20,6 +16,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import test.java.bills2u_root.Root_Class_TestNG;
+import test.java.bills2u_constant.*;
 
 import java.io.*;
 import java.util.Iterator;
@@ -54,7 +52,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/clickOnInvoiceMenuProcess.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"clickOnInvoiceMenuProcess.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/clickOnInvoiceMenuProcess.jpeg").build());
@@ -105,7 +103,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/clickOnInvoiceBatch.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"clickOnInvoiceBatch.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/clickOnInvoiceBatch.jpeg").build());
@@ -153,7 +151,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/clickOnBatchUpload.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"clickOnBatchUpload.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/clickOnBatchUpload.jpeg").build());
@@ -183,7 +181,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/checkName.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"checkName.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/checkName.jpeg").build());
@@ -213,7 +211,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/enterDataInName.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"enterDataInName.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/enterDataInName.jpeg").build());
@@ -263,7 +261,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/setTheReminder.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"setTheReminder.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/setTheReminder.jpeg").build());
@@ -294,7 +292,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/selectFeedType.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"selectFeedType.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/selectFeedType.jpeg").build());
@@ -345,7 +343,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/clickHereProcess.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"clickHereProcess.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/clickHereProcess.jpeg").build());
@@ -451,7 +449,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/editExcelFile.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"editExcelFile.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/editExcelFile.jpeg").build());
@@ -491,7 +489,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/selectOrUnselectNotify.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"selectOrUnselectNotify.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/selectOrUnselectNotify.jpeg").build());
@@ -532,7 +530,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/uploadFile.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"uploadFile.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/uploadFile.jpeg").build());
@@ -590,7 +588,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/placeTheCursorOnBatchUpload.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"placeTheCursorOnBatchUpload.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/placeTheCursorOnBatchUpload.jpeg").build());
@@ -631,7 +629,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/checkInvoiceList.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"checkInvoiceList.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/checkInvoiceList.jpeg").build());
@@ -682,7 +680,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/clickOnEditRecipient.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"clickOnEditRecipient.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/clickOnEditRecipient.jpeg").build());
@@ -738,7 +736,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/enterEmailAndPhoneInRecipient.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"enterEmailAndPhoneInRecipient.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/enterEmailAndPhoneInRecipient.jpeg").build());
@@ -789,7 +787,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/clickOnSaveInRecipient.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"clickOnSaveInRecipient.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/clickOnSaveInRecipient.jpeg").build());
@@ -827,7 +825,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/closeRecipient.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"closeRecipient.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/closeRecipient.jpeg").build());
@@ -879,7 +877,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/clickOnDeleteInRecipient.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"clickOnDeleteInRecipient.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/clickOnDeleteInRecipient.jpeg").build());
@@ -930,7 +928,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/clickOnDelete.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"clickOnDelete.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/clickOnDelete.jpeg").build());
@@ -989,7 +987,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/clickOnDeleteButton.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"clickOnDeleteButton.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/clickOnDeleteButton.jpeg").build());
@@ -1036,7 +1034,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/enterInvoiceNumberInFind.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"enterInvoiceNumberInFind.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/enterInvoiceNumberInFind.jpeg").build());
@@ -1083,7 +1081,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/enterRecipientInFind.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"enterRecipientInFind.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/enterRecipientInFind.jpeg").build());
@@ -1129,7 +1127,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/enterRef1InFind.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"enterRef1InFind.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/enterRef1InFind.jpeg").build());
@@ -1172,7 +1170,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/enterInvoiceAmount.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"enterInvoiceAmount.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/enterInvoiceAmount.jpeg").build());
@@ -1214,7 +1212,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/enterEmptyData.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"enterEmptyData.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/enterEmptyData.jpeg").build());
@@ -1271,7 +1269,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/clickOnExportButton.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"clickOnExportButton.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/clickOnExportButton.jpeg").build());
@@ -1316,7 +1314,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/enterEmailInColumnFilter.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"enterEmailInColumnFilter.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/enterEmailInColumnFilter.jpeg").build());
@@ -1364,7 +1362,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/enterEmptySpaceInEmail.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"enterEmptySpaceInEmail.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/enterEmptySpaceInEmail.jpeg").build());
@@ -1409,7 +1407,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/enterPhoneInColumnFilter.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"enterPhoneInColumnFilter.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/enterPhoneInColumnFilter.jpeg").build());
@@ -1457,7 +1455,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/enterEmptySpaceInPhone.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"enterEmptySpaceInPhone.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/enterEmptySpaceInPhone.jpeg").build());
@@ -1481,7 +1479,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             objInvoice.saveRecipient.click();
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/enterEmailAndPhoneForUpwardTesting.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"enterEmailAndPhoneForUpwardTesting.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/enterEmailAndPhoneForUpwardTesting.jpeg").build());
@@ -1530,7 +1528,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/upwardAero.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"upwardAero.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/upwardAero.jpeg").build());
@@ -1577,7 +1575,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/downwardAero.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"downwardAero.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/downwardAero.jpeg").build());
@@ -1608,7 +1606,7 @@ public class File_Upload_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/selectFeedTypeAsKdu.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"selectFeedTypeAsKdu.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/selectFeedTypeAsKdu.jpeg").build());

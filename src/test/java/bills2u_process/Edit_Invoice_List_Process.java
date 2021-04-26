@@ -1,10 +1,6 @@
-package bills2u_process;
+package test.java.bills2u_process;
 
-import Config.PropertyClass;
-import bills2u_constant.Obj_Rep_EditInvoiceBatch;
-import bills2u_constant.Obj_Rep_InvoiceBatchList;
-import bills2u_constant.Obj_Rep_Menu;
-import bills2u_root.Root_Class_TestNG;
+import test.java.Config.PropertyClass;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.google.common.io.Files;
 import org.openqa.selenium.JavascriptExecutor;
@@ -12,11 +8,13 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
+import test.java.bills2u_root.Root_Class_TestNG;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.NoSuchElementException;
 import java.util.Objects;
+import test.java.bills2u_constant.*;
 
 public class Edit_Invoice_List_Process extends Root_Class_TestNG {
 
@@ -36,7 +34,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
 
         } catch (Exception e) {
             File screen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"/EnterInvoiceNumber.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"EnterInvoiceNumber.jpeg"));
             log.info(e.getMessage());
             test.fail(e.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory")+"/EnterInvoiceNumber.jpeg").build());
@@ -55,7 +53,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
 
         } catch (Exception e) {
             File screen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"/FindFilterInvoiceBatch.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"FindFilterInvoiceBatch.jpeg"));
             log.info(e.getMessage());
             test.fail(e.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory")+"/FindFilterInvoiceBatch.jpeg").build());
@@ -78,7 +76,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
             }
         } catch (Exception e) {
             File screen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"/GoToEditInvoiceBatchList.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"GoToEditInvoiceBatchList.jpeg"));
             log.info(e.getMessage());
             test.fail(e.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory")+"/GoToEditInvoiceBatchList.jpeg").build());
@@ -104,7 +102,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
             }
         } catch (Exception e) {
             File screen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"/GotToInVoiceBatch.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"GotToInVoiceBatch.jpeg"));
             log.info(e.getMessage());
             test.fail(e.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory")+"/GotToInVoiceBatch.jpeg").build());
@@ -126,7 +124,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
             }
         } catch (Exception e) {
             File screen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"/VerifyEnteredInvoiceNumber.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"VerifyEnteredInvoiceNumber.jpeg"));
             log.info(e.getMessage());
             test.fail(e.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory")+"/VerifyEnteredInvoiceNumber.jpeg").build());
@@ -142,7 +140,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
             eBList.filterRef1.sendKeys(prop.getProperty("Bills2U.EditBatchList.Ref1.Filter"));
         } catch (Exception e) {
             File screen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"/EnterRef1Number.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"EnterRef1Number.jpeg"));
             log.info(e.getMessage());
             test.fail(e.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory")+"/EnterRef1Number.jpeg").build());
@@ -165,7 +163,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
             }
         } catch (Exception e) {
             File screen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"/VerifyEnteredRef1Number.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"VerifyEnteredRef1Number.jpeg"));
             log.info(e.getMessage());
             test.fail(e.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory")+"/VerifyEnteredRef1Number.jpeg").build());
@@ -181,7 +179,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
             eBList.filterRef2.sendKeys(prop.getProperty("Bills2U.EditBatchList.Ref2.Filter"));
         } catch (Exception e) {
             File screen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"/EnterRef2Number.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"EnterRef2Number.jpeg"));
             log.info(e.getMessage());
             test.fail(e.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory")+"/EnterRef2Number.jpeg").build());
@@ -204,7 +202,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
             }
         } catch (Exception e) {
             File screen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"/VerifyEnteredRef2Number.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"VerifyEnteredRef2Number.jpeg"));
             log.info(e.getMessage());
             test.fail(e.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory")+"/VerifyEnteredRef2Number.jpeg").build());
@@ -227,7 +225,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
             }
         } catch (Exception e) {
             File screen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"/ClickSearchBtnInvoiceNumber.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"ClickSearchBtnInvoiceNumber.jpeg"));
             log.info(e.getMessage());
             test.fail(e.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory")+"/ClickSearchBtnInvoiceNumber.jpeg").build());
@@ -252,7 +250,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
             }
         } catch (Exception e) {
             File screen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"/ClickSearchBtnRef1.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"ClickSearchBtnRef1.jpeg"));
             log.info(e.getMessage());
             test.fail(e.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory")+"/ClickSearchBtnRef1.jpeg").build());
@@ -277,7 +275,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
             }
         } catch (Exception e) {
             File screen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"/ClickSearchBtnRef2.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"ClickSearchBtnRef2.jpeg"));
             log.info(e.getMessage());
             test.fail(e.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory")+"/ClickSearchBtnRef2.jpeg").build());
@@ -304,7 +302,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
             }
         } catch (Exception e) {
             File screen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"/ClickSearchBtnInvoiceBatchList.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"ClickSearchBtnInvoiceBatchList.jpeg"));
             log.info(e.getMessage());
             test.fail(e.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory")+"/ClickSearchBtnInvoiceBatchList.jpeg").build());
@@ -329,7 +327,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
             }
         } catch (Exception e) {
             File screen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"/VerifyStopBtnEnable.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"VerifyStopBtnEnable.jpeg"));
             log.info(e.getMessage());
             test.fail(e.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory")+"/VerifyStopBtnEnable.jpeg").build());
@@ -353,7 +351,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
             }
         } catch (Exception e) {
             File screen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"/VerifyInvoiceBatchStatus.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"VerifyInvoiceBatchStatus.jpeg"));
             log.info(e.getMessage());
             test.fail(e.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory")+"/VerifyInvoiceBatchStatus.jpeg").build());
@@ -390,7 +388,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
 
         } catch (Exception e) {
             File screen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"/VerifyBatchInvoicesRowStatus.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"VerifyBatchInvoicesRowStatus.jpeg"));
             log.info(e.getMessage());
             test.fail(e.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory")+"/VerifyBatchInvoicesRowStatus.jpeg").build());
@@ -420,7 +418,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
 
         } catch (Exception e) {
             File screen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"/ClickStopButton.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"ClickStopButton.jpeg"));
             log.info(e.getMessage());
             test.fail(e.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory")+"/ClickStopButton.jpeg").build());
@@ -450,7 +448,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
 
         } catch (Exception e) {
             File screen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"/ClickResumeButton.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"ClickResumeButton.jpeg"));
             log.info(e.getMessage());
             test.fail(e.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory")+"/ClickResumeButton.jpeg").build());
@@ -479,7 +477,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
 
         } catch (Exception e) {
             File screen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"/VerifyStopPopup.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"VerifyStopPopup.jpeg"));
             log.info(e.getMessage());
             test.fail(e.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory")+"/VerifyStopPopup.jpeg").build());
@@ -508,7 +506,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
 
         } catch (Exception e) {
             File screen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"/ClickStopPopupStopButton.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"ClickStopPopupStopButton.jpeg"));
             log.info(e.getMessage());
             test.fail(e.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory")+"/ClickStopPopupStopButton.jpeg").build());
@@ -533,7 +531,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
             }
         } catch (Exception e) {
             File screen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"/VerifyResumeBtnEnable.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"VerifyResumeBtnEnable.jpeg"));
             log.info(e.getMessage());
             test.fail(e.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory")+"/VerifyResumeBtnEnable.jpeg").build());
@@ -570,7 +568,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
 
         } catch (Exception e) {
             File screen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"/VerifyBatchInvoicesRowStoppedStatus.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"VerifyBatchInvoicesRowStoppedStatus.jpeg"));
             log.info(e.getMessage());
             test.fail(e.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory")+"/VerifyBatchInvoicesRowStoppedStatus.jpeg").build());
@@ -599,7 +597,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
 
         } catch (Exception e) {
             File screen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"/VerifyResumePopup.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"VerifyResumePopup.jpeg"));
             log.info(e.getMessage());
             test.fail(e.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory")+"/VerifyResumePopup.jpeg").build());
@@ -628,7 +626,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
 
         } catch (Exception e) {
             File screen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"/ClickResumePopupResumeButton.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"ClickResumePopupResumeButton.jpeg"));
             log.info(e.getMessage());
             test.fail(e.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory")+"/ClickResumePopupResumeButton.jpeg").build());
@@ -667,7 +665,7 @@ public class Edit_Invoice_List_Process extends Root_Class_TestNG {
             }
         } catch (Exception e) {
             File screen=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"/DownloadEditInvoiceBatchReport.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"DownloadEditInvoiceBatchReport.jpeg"));
             log.info(e.getMessage());
             test.fail(e.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory")+"/DownloadEditInvoiceBatchReport.jpeg").build());

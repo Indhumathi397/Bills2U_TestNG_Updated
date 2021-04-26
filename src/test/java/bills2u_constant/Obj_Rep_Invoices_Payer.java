@@ -1,4 +1,4 @@
-package bills2u_constant;
+package test.java.bills2u_constant;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -34,4 +34,12 @@ public class Obj_Rep_Invoices_Payer {
 
     @FindBy(xpath = "/html/body/app-root/div/app-layout/mat-sidenav-container/mat-sidenav-content/div[3]/mat-icon")
     public WebElement backToTop;
+
+    @FindBy(xpath = "/html/body/app-root/div/app-layout/mat-sidenav-container/mat-sidenav-content/div[1]/div[1]/bill-view/div/div[5]/invoice/div/div/table[1]/tr[2]/td[1]/div[1]")
+    public WebElement invoiceTitle;
+
+    @FindBy(xpath = "/html/body/app-root/div/app-layout/mat-sidenav-container/mat-sidenav-content/div[1]/div[1]/bill-view/div/div[5]/invoice/div/div/table[1]/tr[2]/td[1]/div[2]/img")
+    public WebElement merchantLogo;
+
+
 }

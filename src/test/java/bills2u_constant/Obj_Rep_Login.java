@@ -1,4 +1,4 @@
-package bills2u_constant;
+package test.java.bills2u_constant;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

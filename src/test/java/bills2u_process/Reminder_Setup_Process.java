@@ -1,8 +1,8 @@
-package bills2u_process;
+package test.java.bills2u_process;
 
-import Config.PropertyClass;
-import bills2u_constant.*;
-import bills2u_root.Root_Class_TestNG;
+import test.java.Config.PropertyClass;
+import test.java.bills2u_constant.*;
+import test.java.bills2u_root.Root_Class_TestNG;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.google.common.io.Files;
 import org.openqa.selenium.By;
@@ -318,7 +318,7 @@ public class Reminder_Setup_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/clickHereProcess.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"clickHereProcess.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/clickHereProcess.jpeg").build());
@@ -391,7 +391,7 @@ public class Reminder_Setup_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/uploadFile.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"uploadFile.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/uploadFile.jpeg").build());

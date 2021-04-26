@@ -1,11 +1,7 @@
-package bills2u_process;
+package test.java.bills2u_process;
 
-import Config.PropertyClass;
-import bills2u_constant.Obj_Rep_Home;
-import bills2u_constant.Obj_Rep_Invoice;
-import bills2u_constant.Obj_Rep_Login;
-import bills2u_constant.Obj_Rep_Tooltip;
-import bills2u_root.Root_Class_TestNG;
+import test.java.Config.PropertyClass;
+import test.java.bills2u_constant.*;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.google.common.io.Files;
 import org.openqa.selenium.JavascriptExecutor;
@@ -15,6 +11,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import test.java.bills2u_root.Root_Class_TestNG;
 
 import java.io.File;
 import java.io.IOException;
@@ -47,7 +44,7 @@ public class Payment_Listing_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/clickOnInvoiceMenuProcess.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"clickOnInvoiceMenuProcess.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/clickOnInvoiceMenuProcess.jpeg").build());
@@ -90,7 +87,7 @@ public class Payment_Listing_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/clickOnPaymentMenu.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"clickOnPaymentMenu.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/clickOnPaymentMenu.jpeg").build());
@@ -147,7 +144,7 @@ public class Payment_Listing_Process extends Root_Class_TestNG {
             }
         } catch (Exception ex) {
             File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory") + "/placeTheCursorOnShowFilter.jpeg"));
+            Files.copy(screen, new File(prop.getProperty("Bills2U.screenshot.Directory")+"placeTheCursorOnShowFilter.jpeg"));
             log.info(ex.getMessage());
             test.fail(ex.getMessage());
             test.info("Here, the screenshot has been attached.\n", MediaEntityBuilder.createScreenCaptureFromPath(prop.getProperty("Bills2U.screenshot.Directory") + "/placeTheCursorOnShowFilter.jpeg").build());

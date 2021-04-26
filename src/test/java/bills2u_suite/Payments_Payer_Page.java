@@ -1,6 +1,6 @@
-package bills2u_suite;
+package test.java.bills2u_suite;
 
-import bills2u_process.Process_Class_Payer;
+import test.java.bills2u_process.Process_Class_Payer;
 
 public class Payments_Payer_Page extends Process_Class_Payer {
 

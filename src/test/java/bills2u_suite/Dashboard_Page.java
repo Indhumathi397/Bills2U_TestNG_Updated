@@ -1,6 +1,6 @@
-package bills2u_suite;
+package test.java.bills2u_suite;
 
-import bills2u_process.Dashboard_Process;
+import test.java.bills2u_process.Dashboard_Process;
 
 import java.io.IOException;
 
